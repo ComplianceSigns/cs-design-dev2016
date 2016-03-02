@@ -59,6 +59,9 @@ cs-pp-rightWorkArea
     border-radius: 3px;
     border: 1px solid $green;
     float: left;
+    .line-header h2  {
+        background: $lightest-green;
+    }
     form {
         padding-top: 10px;
         float: left;
