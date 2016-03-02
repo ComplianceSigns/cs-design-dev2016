@@ -13,31 +13,30 @@ $sticky-shrinking-navbar-height: 132px;
 
 /* static/fixed version of the navbar for review */
 
-.shrinking-header {
-    background: transparent;
-    /* animation magic */
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    z-index: map-get($zindex, shrinking-header);
-    top: 0;
-    //position: fixed;  //leaving this breaks the center alignment
-    margin-top: 4px; //any margin here leaves a gap
-}
+// .shrinking-header {
+//     background: transparent;
+//     /* animation magic */
+//     -webkit-transition: all 0.4s ease-in-out;
+//     -moz-transition: all 0.4s ease-in-out;
+//     z-index: map-get($zindex, shrinking-header);
+//     top: 0;
+//     //position: fixed;  //leaving this breaks the center alignment
+//     margin-top: 4px; //any margin here leaves a gap
+// }
 
-.nav.cs-fixed-navbar {
+// .shrink {
+//     padding: 0px 0;
+//     margin-top: -10px;
+//     margin-bottom: 0;
+//     height: 65px;
+//     margin-top: 0px;
+// }
+nav.cs-fixed-navbar {
     font-size: 30px;
-    text-indent: 40px;
-    
-    font-weight: bold;
+    margin-bottom: 0;
+    border:none;
 }
 
-.shrink {
-    padding: 0px 0;
-    margin-top: -10px;
-    margin-bottom: 0;
-    height: 65px;
-    margin-top: 0px;
-}
 
 .cs-fixed-navbar {
     .cs-navbar-constrain {

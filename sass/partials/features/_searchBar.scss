@@ -1,5 +1,6 @@
 /* ---------------- Search Bar inside Header ---------------- */
 
+$cs-search-radius: 10px;
 .cs-flexbox-container {
     display: inline-flex;
     flex-direction: row;
@@ -14,33 +15,65 @@
     flex-basis: auto;
 }
 
+span.fa.fa-search {
+    display: inline;
+    position: absolute;
+    width: 25%;
+    text-align: center;
+    padding-top: 4px;
+    z-index: map-get($zindex, search-input-button-text);
+    &::before {
+        color: #ffffff;
+        font-size: $font-size-base + 4;
+        // position: absolute;
+        // top: 8px;
+        // right: 40px;
+        padding-right: 10px;
+    }
+    &::after {
+        content: 'SEARCH';
+        color: #ffffff;
+        @include font-normal;
+        font-weight: $bold;
+        font-size: $font-size-base + 2;
+        //font-family: $font-family-arial;
+    }
+}
+
 .cs-search-orange {
-    border-radius: 4px;
+    border-radius: $cs-search-radius;
     height: 47px;
-    background: white;
-    border: 3px solid $orange;
+    background: $orange;
+    border: $cs-search-radius solid $orange;
+    border: 10px solid $orange;
     flex-grow: 9;
     form {
+        position: relative;
         input#sli_search_1 {
-            width: calc(100% - 170px);
-            height: 38px;
-            border: 0;
+            width: calc(75% - 20px);
+            height: 26px;
+            //border: 0;
             padding: 10px;
             font-size: $font-size-base;
+            margin: 0px 3px 6px 6px;
+            border-radius: $cs-search-radius;
+            border: none;
         }
         input.cs-search-btn {
             width: 169px;
-            height: 39px;
+            width: calc(25% - 6px);
+            height: 26px;
             background: $blue;
             font-size: 15px;
-            border-radius: 4px;
+            margin: 0px 6px 6px 3px;
+            border-radius: $cs-search-radius;
             border: none;
-            position: relative;
-            top: 1px;
-            right: 1px;
-            &:hover {
+        }
+        .cs-search-btn-container {
+            display: initial;
+            &:hover input.cs-search-btn {
                 background-color: darken( $blue, 15%);
-                background-color: $orange;
+                //background-color: $orange;
             }
         }
     }

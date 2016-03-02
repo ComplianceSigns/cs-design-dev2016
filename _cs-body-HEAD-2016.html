@@ -1,5 +1,4 @@
-<!-- Sticky header  -->
-<nav class="navbar navbar-fixed-top cs-fixed-navbar shrinking-header">
+<nav class="navbar cs-fixed-navbar">
     <div class="container">
         <div id="navbar" class="cs-navbar-constrain">
             <div class="col-sm-4 col-md-3">
@@ -38,7 +37,10 @@
                 <form method="get" action="http://safety-signs.compliancesigns.com/search" name="searchform" onsubmit="return ajaxsearchsubmit(this)">
                     <input type="text" onblur="" onfocus="" value="" name="w" id="sli_search_1" autocomplete="off" placeholder="What can we help you find?">
                     <input type="hidden" name="asug">
-                    <input name="Search" form="searchForm" type="submit" value="SEARCH" class="btn btn-info cs-search-btn pull-right">
+                    <div class="cs-search-btn-container">
+                    <span class="fa fa-search"></span>
+                    <input name="Search" form="searchForm" type="submit" value="" class="btn btn-info cs-search-btn pull-right">
+                    </div>
                 </form>
             </div>
             <div class="cs-create-custom-btn cs-flexbox-child"><a href="http://www.compliancesigns.com/customsigns.shtml"><h3>CREATE A CUSTOM SIGN</h3></a></div>

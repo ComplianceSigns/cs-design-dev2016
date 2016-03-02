@@ -117,7 +117,7 @@
     @mixin soc-med-circle-icon {
         width: 28px;
         height: 28px;
-        border: 1px solid green;
+        border: 1px solid $grey;
         display: inline-block;
         border-radius: 20px;
         padding: 5px;
@@ -127,7 +127,7 @@
     .cs-btn-green-soc-med {
         button {
             &:first-of-type {
-                border-right: 1px solid #417c61;
+                //border-right: 1px solid #417c61;
                 margin-right: 5px;
             }
         }
@@ -135,14 +135,15 @@
     /* all three buttons  */
     .cs-btn-green-group-soc-med button,
     .cs-btn-green-soc-med button {
-        color: $green;
+       // color: $green;
         background: #ffffff;
-        border: 1px solid $green;
+        border: none;
         height: 38px;
         transition: background-color .8s;
         margin-right: 10px;
         float: right;
         width: auto;
+        padding: 2px 5px;
         &:hover {
             color: #ffffff;
             background: $green;
@@ -159,11 +160,11 @@
     }
     .btn-group>.btn:last-child:not(:first-child),
     .btn-group>.dropdown-toggle:not(:first-child) {
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 3px;
-        border-top-left-radius: 3px;
-        border-right-style: dashed;
+        // border-bottom-right-radius: 0;
+        // border-top-right-radius: 0;
+        // border-bottom-left-radius: 3px;
+        // border-top-left-radius: 3px;
+        // border-right-style: dashed;
     }
     .cs-btn-green-group-soc-med {
         button {
@@ -201,7 +202,7 @@
         display: block;
         float: right;
         button {
-            padding: 2px 5px;
+            
             span.fa {
                 font-family: "Fontawesome";
                 padding: 0 0 0 14px;

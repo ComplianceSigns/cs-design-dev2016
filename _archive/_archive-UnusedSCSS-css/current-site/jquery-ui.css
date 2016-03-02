@@ -1,0 +1,9 @@
+.ui-dialog .ui-dialog-buttonpane {
+  padding-left: 7em !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+  float: left !important;
+}
+
+/*# sourceMappingURL=jquery-ui.css.map */
