@@ -2,7 +2,7 @@
 
 /* ---------------- # SCSS files for Compliance Signs website - ---------------- */
 
-@import "modules/all"; 							/* # All Modules */
+@import "modules/all"; 			 				/* # All Modules */
 
 //pages that provide basic structure  //
 @import "pages/productPage";	
@@ -13,7 +13,7 @@
 @import "primary/header";						/* # Primary : Header classes */
 @import "features/searchBar";					/* Search bar that appears in the header   */
 @import "buttons2";								/* # All Buttons */
-@import "verticalMenu";							/* Megamenu styles  */
+@import "features/verticalMenu";							/* Megamenu styles  */
 @import "../../slick-1.5.9/slick/slick";
 @import "../../slick-1.5.9/slick/slick-theme";
 @import "features/omt2";

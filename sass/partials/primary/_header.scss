@@ -23,7 +23,6 @@ $sticky-shrinking-navbar-height: 132px;
 //     //position: fixed;  //leaving this breaks the center alignment
 //     margin-top: 4px; //any margin here leaves a gap
 // }
-
 // .shrink {
 //     padding: 0px 0;
 //     margin-top: -10px;
@@ -34,14 +33,13 @@ $sticky-shrinking-navbar-height: 132px;
 nav.cs-fixed-navbar {
     font-size: 30px;
     margin-bottom: 0;
-    border:none;
+    border: none;
 }
-
 
 .cs-fixed-navbar {
     .cs-navbar-constrain {
         >div {
-            padding:0;
+            padding: 0;
         }
         background: #ffffff;
         padding-right: 5px;
@@ -54,9 +52,9 @@ nav.cs-fixed-navbar {
         //Goldstar, Inc5000 Made in USA image in header
         .cs-standards-icons {
             padding: 0 0 3px 0;
-            img{
+            img {
                 max-width: 284px;
-            }   
+            }
         }
     }
     //moves the whole thing down inside its white container
@@ -71,6 +69,11 @@ nav.cs-fixed-navbar {
     .navbar-nav>li {
         &.cs-email {
             padding-bottom: 0;
+            >a:hover img {
+                height: auto;
+                width: auto;
+                text-decoration: underline;
+            }
         }
         &>a {
             text-decoration: none;
