@@ -3,8 +3,5 @@
 @import "partials/bootstrap/_bootstrap-custom";		/* # Complete Bootstrap, customized variables */
 @import "modules/all"; 								/* # All Modules - non renderable code */
 @import "partials/base";							/* # All partials */
-@import "verticalMenu";								/* Megamenu styles  */
-@import "streetSignCustom";							/* # Street Sign CSG Styles */
+
 @import "bootstrapOverrides";						/* # Street Sign CSG Styles */
-@import "productPage";	
-@import "partials/omt2";
