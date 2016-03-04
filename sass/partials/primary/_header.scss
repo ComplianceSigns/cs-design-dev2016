@@ -73,7 +73,16 @@ nav.cs-fixed-navbar {
                 height: auto;
                 width: auto;
                 text-decoration: underline;
+                padding-top: 0;
             }
+            //fixes the Email Us image positioning (moved up)
+            a img {
+                margin-top: -22px;
+            }
+            //positions the | after the Email Us since that has different neg margin alignment than the other li's
+            img {
+            margin-top: -8px;
+        }
         }
         &>a {
             text-decoration: none;
@@ -85,6 +94,9 @@ nav.cs-fixed-navbar {
             padding-right: 12px;
             padding-left: 12px;
             padding-bottom: 4px;
+        }
+        img {
+            margin-top: -2px;
         }
     }
     .navbar-nav>li>a:focus,
@@ -101,10 +113,6 @@ nav.cs-fixed-navbar {
             height: 9px;
             width: 1px;
         }
-    }
-    //fixes the Email Us image positioning (moved up)
-    li.cs-email a img {
-        margin-top: -21px;
     }
     // .nav > li > a > img {
     // }

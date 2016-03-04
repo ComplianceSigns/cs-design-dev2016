@@ -12,10 +12,6 @@
 <a href="[-- Product.MoreInfoURL --]" class="rvlink"><img src="http://cdn.compliancesigns.com/media/[-- IMAGE Product.Graphic --]" alt="[-- Product.GoogleProductType JS_ENCODE --]" title="[--Product.Name--]"/></a>
 [-- END_DEFINE PRODUCT_CROSS_SELL --]
 
-[-- DEFINE SIMILAR_PRODUCTS --]
-<p>[-- PRODUCT.Field14 --]"</p>
-[-- END_DEFINE SIMILAR_PRODUCTS --]
-
 [-- DEFINE MORE_INFO_PAGE--] 
 
 <!DOCTYPE html>
@@ -41,10 +37,12 @@
     <!-- Customerrs also consider  -->
     [-- INCLUDE _cs-cross-sell process --]
     <!-- Recently Viewed  -->
-    [-- INCLUDE _cs-cross-sell process --]
+    [-- INCLUDE _cs-recently-viewed-2016 process --]
     <!-- Onscreen Footer  -->
     [-- INCLUDE _cs-footer2016 process --]
     <!-- include email-popup.html -->
+
+    [-- INCLUDE _cs-footer-product-template-js-2016 process--]
     [-- INCLUDE _cs-footer-js-2016 process--]
     [-- INCLUDE _cs-ending-body-tag-2016 --]
     </html>

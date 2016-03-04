@@ -11,6 +11,8 @@
         }
     }
     .cs-link-strip-upper {
+        //@include cs-section-border;
+        border-top: 3px solid $light-green-2015site;
         ul {
             li {
                 list-style-type: none;
@@ -20,7 +22,8 @@
         }
     }
     .cs-link-list {
-        border-top: 1px solid $green;
+        //@include cs-section-border;
+        border-top: 3px solid $light-green-2015site;
         margin: 0;
         padding: 15px;
         h4 {
@@ -57,7 +60,8 @@
         .cs-footer-customer-quote {}
     }
     .cs-link-strip-lower {
-        border-top: 1px solid $green;
+        //@include cs-section-border;
+        border-top: 2px solid $green;
         padding: 8px 8px 0 8px;
         li {
             list-style-type: none;
@@ -88,7 +92,8 @@
 }
 
 .cs-copyright {
-    border-top: 1px solid $green;
+    //@include cs-section-border;
+    border-top: 2px solid $green;
     background: #ffffff;
     text-align: center;
     padding: 15px;

@@ -30,53 +30,107 @@ $(document).ready(function() {
         slidesToShow: 5,
         slidesToScroll: 3,
         responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 3,
-                    infinite: false,
-                    dots: false
-                }
-            }, {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            }, {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 3,
+                infinite: false,
+                dots: false
             }
-        ]
+        }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
     });
+
 
     /* Product Template Image viewer - hide synched-slide-show-ribbon if less than one image  */
-        var slideImages = $('img.slick-slide').length;
+    var slideImages = $('img.slick-slide').length;
+    console.log(slideImages);
+    if (slideImages <= 2) {
+        $('.slider-nav img.slick-slide').hide();
         console.log(slideImages);
-        if (slideImages <= 2) {
-            $('.slider-nav img.slick-slide').hide();
-            console.log(slideImages);
-        }
+    }
     /* end ribbon code  */
+    /* Truncate these classes with these setting  */
+    // $('.truncate').shorten({
+    //     moreText: 'more',
+    //     lessText: 'less',
+    //     showChars: 550
+    // });
+    // $('.truncate-shorter').shorten({
+    //     moreText: 'more',
+    //     lessText: 'less',
+    //     showChars: 150
+    // });
 
-    /* Shrinking Header  */
-    $(document).on("scroll", function(){
-        if
-      ($(document).scrollTop() > 100){
-          $(".cs-navbar-constrain").addClass("shrink");
-            updateSliderMargin();
-        }
-        else
-        {
-            $(".cs-navbar-constrain").removeClass("shrink");
-            updateSliderMargin();
-        }
-    });
+    (function($) {
+        $.fn.summary = function(options) {
+            return this.each(function() {
+                new $.Summary(this, options);
+            });
+        };
+
+        $.Summary = function(e, o) {
+            var element = $(e);
+            var options = o || {};
+            var maxHeight = options.maxHeight || 100;
+            var className = options.className || 'expand';
+            var textHeight = e.offsetHeight;
+
+            //IF the height is too large, add the MORE link
+            if (textHeight > maxHeight) {
+                element.css({ overflow: 'hidden' });
+                element.height(maxHeight);
+
+                var moreLink = $("<a>More</a>").click(expand).addClass(className);
+                element.after(moreLink);
+                console.log(moreLink);
+            }
+
+            //Expands and Shows the full div height
+            function expand() {
+                element.animate({ height: textHeight }, 'fast');
+                moreLink.replaceWith("<a>Less</a>");
+            };
 
 
+            //Contracts and puts the height hack to the maxheight
+            function contract() {
+                element.animate({ height: textHeight }, 'fast');
+                moreLink.replaceWith("<a>More</a>");
+
+                element.css({ overflow: 'hidden' });
+                element.height(textHeight);
+            };
+
+
+        };
+    })(jQuery);
+
+    $('.truncate').summary({ maxHeight: 200, className: 'view-more' });
+
+
+    // $('.truncate').jTruncate();
+
+    //   $('.truncate').jTruncate({  
+    //     length: 20,  
+    //     minTrail: 0,  
+    //     moreText: "[see all]",  
+    //     lessText: "[hide extra]",  
+    //     ellipsisText: " (truncated)",  
+    //     moreAni: "fast",  
+    //     lessAni: 2000  
+    // });  
 
 }); //End $(document).ready
 

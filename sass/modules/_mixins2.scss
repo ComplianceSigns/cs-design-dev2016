@@ -28,6 +28,13 @@ $cs-btn-color-white: #ffffff;
 $cs-csg3-input-field-length: 94px;
 $cs-csg3-input-field-length-long: 188px;
 //padding for above labels, originally for the Street Sign Generator - this is in a mixin for future flexibility (in case other padding should be added or changed)
+$cs-section-border-color: lighten($light-grey, 20%);
+//$cs-section-border-color: $green;
+
+
+@mixin cs-section-border {
+    border-top: 1px solid $cs-section-border-color;
+}
 @mixin label-padding {
     padding-top: $button-padding-top;
 }

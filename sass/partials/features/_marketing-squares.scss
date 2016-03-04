@@ -1,13 +1,9 @@
-
-
-
-
 .cs-marketing-square-container {
     height: 177px;
     background: #ffffff;
     color: $grey;
     padding: 10px 0;
-    border-top: 1px solid #386b54;
+    @include cs-section-border;
     box-sizing: border-box;
     display: inline-flex;
     a:hover {
@@ -46,14 +42,14 @@
         transition: border, background-color, color .8s;
         max-width: 180px;
         margin: 0 auto;
-        &:hover,
-        &:active {
-            background-color: #ffffff;
-            color: $green;
-            outline: none;
-            border: 1px solid $green;
-            transition: border .25s, background-color .25s, color .25s;
-        }
+       /*  &:hover,
+       &:active {
+           background-color: #ffffff;
+           color: $green;
+           outline: none;
+           border: 1px solid $green;
+           transition: border .25s, background-color .25s, color .25s;
+       } */
     }
     .cs-marketing-square-specs {
         background: $light-green;
@@ -63,6 +59,9 @@
         flex-grow: 5;
         flex-basis: 41%;
         flex-flow: column nowrap;
+        border: 2px solid;
+        border-color: $light-green;
+        transition: border .5s;
     }
     .cs-marketing-square-languages {
         background: $light-green;
@@ -91,6 +90,13 @@
         background-size: 184px 154px;
         background-repeat: no-repeat;
         transition: border .5s;
+        &:hover {
+            border-color: $green;
+            transition: border-color .2s;
+        }
+    }
+    //hovers for both squares
+    .cs-marketing-square-customize, .cs-marketing-square-specs {
         &:hover {
             border-color: $green;
             transition: border-color .2s;

@@ -262,3 +262,16 @@
         }
     }
 }
+
+
+/*  link for Truncation - jquery.shorten.min - Read More and Read Less  */
+
+.truncate {
+    z-index: map-get($zindex, truncation-more-less);
+}
+
+.morelink {
+    float: right;
+    margin-right: 30px;
+    padding: 0;
+}

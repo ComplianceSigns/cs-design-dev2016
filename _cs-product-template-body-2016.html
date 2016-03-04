@@ -84,7 +84,7 @@
                         [-- END_IF --] [-- IF PRODUCT.Field2 --]
                         <div class="col-sm-12">
                             <dt>Wording: </dt>
-                            <dd class="col-sm-12" id="wording">[--Product.Field2--]</dd>
+                            <dd class="col-sm-12 truncate-shorter" id="wording">[--Product.Field2--]</dd>
                         </div>
                         [-- END_IF --] [-- IF PRODUCT.Field21 --]
                         <div class="col-sm-6">
@@ -101,10 +101,12 @@
                     <!-- Product Descriptions -->
                 </div>
                 <div class="col-sm-12 cs-product-description">
-                <div class="line-header">
+                    <div class="line-header">
                         <h2>Product Description</h2>
                     </div>
-                    [-- PRODUCT.MoreInformationText --]
+                    <div class="truncate">
+                        [-- PRODUCT.MoreInformationText --]
+                    </div>
                 </div>
             </div>
         </div>
@@ -229,39 +231,44 @@
                 <div class="line-header">
                     <h2>Read Customer Reviews</h2>
                 </div>
-                <div class="cs-customer-review-stars">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star disabled"></span>
+                <div class="cs-customer-review-container">
+                    <div class="cs-customer-review-stars">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star disabled"></span>
+                    </div>
+                    <div class="cs-customer-review-stars-ratings">
+                        <div><span>4 / 5 stars</span></div>
+                    </div>
+                    <h3 class="cs-customer-review-healine">Easy Purchase</h3>
+                    <blockquote>We rely on this site as update signage...handicap compliant, etc. Actually referred by the local Fire Batallion Chief.</blockquote>
+                    <p class="cs-customer-review-author">By Doug</p>
+                    <p class="cs-customer-review-origin">from &amp;<span>Smyrma, GA</span></p>
                 </div>
-                <div class="cs-customer-review-stars-ratings">
-                    <div><span>4 / 5 stars</span></div>
+                <div class="cs-customer-review-divider"></div>
+                <div class="cs-customer-review-container">
+                    <div class="cs-customer-review-stars">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star disabled"></span>
+                    </div>
+                    <div class="cs-customer-review-stars-ratings">
+                        <div><span>4 / 5 stars</span></div>
+                    </div>
+                    <h3 class="cs-customer-review-healine">Easy Purchase</h3>
+                    <blockquote>We rely on this site as update signage...handicap compliant, etc. Actually referred by the local Fire Batallion Chief.</blockquote>
+                    <p class="cs-customer-review-author">By Doug</p>
+                    <p class="cs-customer-review-origin">from &nbsp;<span>Smyrma, GA</span></p>
                 </div>
-                <h3 class="cs-customer-review-healine">Easy Purchase</h3>
-                <blockquote>We rely on this site as update signage...handicap compliant, etc. Actually referred by the local Fire Batallion Chief.</blockquote>
-                <p class="cs-customer-review-author">By Doug</p>
-                <p class="cs-customer-review-origin">from &amp;<span>Smyrma, GA</span></p>
             </div>
-            <div class="col-sm-12 cs-customer-reviews">
+            <div class="col-sm-12 cs-q-and-a">
                 <div class="line-header">
-                    <h2>Read Customer Reviews</h2>
+                    <h2>Questions and Answers</h2>
                 </div>
-                <div class="cs-customer-review-stars">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star disabled"></span>
-                </div>
-                <div class="cs-customer-review-stars-ratings">
-                    <div><span>4 / 5 stars</span></div>
-                </div>
-                <h3 class="cs-customer-review-healine">Easy Purchase</h3>
-                <blockquote>We rely on this site as update signage...handicap compliant, etc. Actually referred by the local Fire Batallion Chief.</blockquote>
-                <p class="cs-customer-review-author">By Doug</p>
-                <p class="cs-customer-review-origin">from &nbsp;<span>Smyrma, GA</span></p>
             </div>
         </div>
         <div class="cs-soc-med">
