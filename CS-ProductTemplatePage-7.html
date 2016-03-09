@@ -9,7 +9,9 @@
 [--END_DEFINE PRODUCT--]
 
 [-- DEFINE PRODUCT_CROSS_SELL --]
-<a href="[-- Product.MoreInfoURL --]" class="rvlink"><img src="http://cdn.compliancesigns.com/media/[-- IMAGE Product.Graphic --]" alt="[-- Product.GoogleProductType JS_ENCODE --]" title="[--Product.Name--]"/></a>
+<!-- add data elmeent to the html data-sku="skunumber" data-product="productname" -->
+
+<a href="[-- Product.MoreInfoURL --]" class="rvlink"><img src="http://cdn.compliancesigns.com/media/[-- IMAGE Product.Graphic --]" alt="[-- Product.GoogleProductType JS_ENCODE --]" title="[--Product.Name--]" data-sku="[-- PRODUCT.SKU --]" data-product-name="[-- PRODUCT.Name --]" data-product-url="[-- Product.MoreInfoURL --]"/></a>
 [-- END_DEFINE PRODUCT_CROSS_SELL --]
 
 [-- DEFINE MORE_INFO_PAGE--] 

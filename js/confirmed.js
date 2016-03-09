@@ -73,7 +73,7 @@ $(document).ready(function() {
     //     showChars: 150
     // });
 
-    (function($) {
+    /*(function($) {
         $.fn.summary = function(options) {
             return this.each(function() {
                 new $.Summary(this, options);
@@ -117,8 +117,49 @@ $(document).ready(function() {
         };
     })(jQuery);
 
-    $('.truncate').summary({ maxHeight: 200, className: 'view-more' });
+    $('.truncate').summary({ maxHeight: 200, className: 'view-more' });*/
 
+    var truncateHeight = $('.truncate').outerHeight();
+    var maxTruncateHeight = 200;
+    var currentHeight = 0;
+    var arrPlus = [];
+    var moreLink = $("<a>More</a>").click(expand);
+
+    function expand() {
+        moreLink.replaceWith("<a>Less</a>");
+    };
+
+    //compare the 2, run the childHeight function if it meets the parameters.
+    if (truncateHeight >= maxTruncateHeight) {
+
+        //childHeight function should find children in array who's total height is greater than maxTruncateHeight, and hide all those children
+
+
+        $('.truncate').children().each(function() {
+
+            var newHeight = $(this).outerHeight() + currentHeight;
+            arrPlus.push(newHeight);
+            currentHeight = newHeight;
+            if (newHeight >= maxTruncateHeight) {
+                $(this).hide();
+                //change the height of the truncate
+                $('.truncate').css('height', maxTruncateHeight);
+                //show the MoreLink with Less in text
+                moreLink.replaceWith("<a>Less</a>").show();
+            }
+        });
+    } else {
+
+
+        moreLink.replaceWith("<a>More</a>").click(function() {
+            alert("handler for  a .click() called.");
+        });
+        //it should toggle a flag to open or closed.
+        //another function should handle showing and changing the click text
+
+        console.log("getting the else here");
+        //if it doesn't meet the if parameters, then link should be hidden and height should be auto - remove classes .truncate-opened or .truncate-closed.
+    }
 
     // $('.truncate').jTruncate();
 
