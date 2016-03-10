@@ -61,117 +61,21 @@ $(document).ready(function() {
         console.log(slideImages);
     }
     /* end ribbon code  */
-    /* Truncate these classes with these setting  */
-    // $('.truncate').shorten({
-    //     moreText: 'more',
-    //     lessText: 'less',
-    //     showChars: 550
-    // });
-    // $('.truncate-shorter').shorten({
-    //     moreText: 'more',
-    //     lessText: 'less',
-    //     showChars: 150
-    // });
-
-    /*(function($) {
-        $.fn.summary = function(options) {
-            return this.each(function() {
-                new $.Summary(this, options);
-            });
-        };
-
-        $.Summary = function(e, o) {
-            var element = $(e);
-            var options = o || {};
-            var maxHeight = options.maxHeight || 100;
-            var className = options.className || 'expand';
-            var textHeight = e.offsetHeight;
-
-            //IF the height is too large, add the MORE link
-            if (textHeight > maxHeight) {
-                element.css({ overflow: 'hidden' });
-                element.height(maxHeight);
-
-                var moreLink = $("<a>More</a>").click(expand).addClass(className);
-                element.after(moreLink);
-                console.log(moreLink);
-            }
-
-            //Expands and Shows the full div height
-            function expand() {
-                element.animate({ height: textHeight }, 'fast');
-                moreLink.replaceWith("<a>Less</a>");
-            };
-
-
-            //Contracts and puts the height hack to the maxheight
-            function contract() {
-                element.animate({ height: textHeight }, 'fast');
-                moreLink.replaceWith("<a>More</a>");
-
-                element.css({ overflow: 'hidden' });
-                element.height(textHeight);
-            };
-
-
-        };
-    })(jQuery);
-
-    $('.truncate').summary({ maxHeight: 200, className: 'view-more' });*/
-
-    var truncateHeight = $('.truncate').outerHeight();
-    var maxTruncateHeight = 200;
-    var currentHeight = 0;
-    var arrPlus = [];
-    var moreLink = $("<a>More</a>").click(expand);
-
-    function expand() {
-        moreLink.replaceWith("<a>Less</a>");
-    };
-
-    //compare the 2, run the childHeight function if it meets the parameters.
-    if (truncateHeight >= maxTruncateHeight) {
-
-        //childHeight function should find children in array who's total height is greater than maxTruncateHeight, and hide all those children
-
-
-        $('.truncate').children().each(function() {
-
-            var newHeight = $(this).outerHeight() + currentHeight;
-            arrPlus.push(newHeight);
-            currentHeight = newHeight;
-            if (newHeight >= maxTruncateHeight) {
-                $(this).hide();
-                //change the height of the truncate
-                $('.truncate').css('height', maxTruncateHeight);
-                //show the MoreLink with Less in text
-                moreLink.replaceWith("<a>Less</a>").show();
-            }
-        });
-    } else {
-
-
-        moreLink.replaceWith("<a>More</a>").click(function() {
-            alert("handler for  a .click() called.");
-        });
-        //it should toggle a flag to open or closed.
-        //another function should handle showing and changing the click text
-
-        console.log("getting the else here");
-        //if it doesn't meet the if parameters, then link should be hidden and height should be auto - remove classes .truncate-opened or .truncate-closed.
+    /* Truncate-shorter shows and hides on click the contents  */
+    $('a.cs-truncateShorterLink').click(function() {
+            $('#wording').toggleClass('cs-shortTruncated');
+        })
+        //checks to determine size, and whether to truncate
+    var truncShortOrigHeight = $('.cs-truncate-shorter').outerHeight();
+    //17 = the height of one line of text onscreen in the Product Details section
+    if (truncShortOrigHeight <= 17) {
+        $('a.cs-truncateShorterLink').hide();
     }
-
-    // $('.truncate').jTruncate();
-
-    //   $('.truncate').jTruncate({  
-    //     length: 20,  
-    //     minTrail: 0,  
-    //     moreText: "[see all]",  
-    //     lessText: "[hide extra]",  
-    //     ellipsisText: " (truncated)",  
-    //     moreAni: "fast",  
-    //     lessAni: 2000  
-    // });  
+    if (truncShortOrigHeight > 17) {
+        $('#wording').toggleClass('cs-shortTruncated');
+    }
+    //restrict input to numbers only, uses plugin jquery.numeric.js
+    $("input#qnty").numeric();
 
 }); //End $(document).ready
 
@@ -267,6 +171,7 @@ function applyDiscount(form) {
     document.getElementById("price").value = "$" + price.toFixed(2);
     document.getElementById("qbtPriceEachDiv").innerHTML = "Price Each: &nbsp <br/>" + "$" + price.toFixed(2);
 
+
     var total = price * qnty;
     document.getElementById("qbtTotalPriceDiv").innerHTML = "<b>Total:&nbsp $" + "<span class='currency'>" + total.toFixed(2) + "</b>";
 
@@ -284,7 +189,6 @@ function applyDiscount(form) {
         $('#qbtSavingsYou').hide();
     }
 
-
     // QBIT PRODUCTS CODE
     if (typeof universal_variable != "undefined") {
         universal_variable.product.unit_price = parseFloat(origPrice);
@@ -295,7 +199,7 @@ function applyDiscount(form) {
 
 $('#qnty').keyup(function() {
     // do the Ajax request or any other request
-    applyDiscountPrimer(document.mainform)
+    applyDiscountPrimer(document.mainform);
 });
 /*  changing the bold on the selected Material/Size (aka the radio checked row)   */
 // $(':input[name$=":finopt:0"]:checked').val();   //this returns the material name

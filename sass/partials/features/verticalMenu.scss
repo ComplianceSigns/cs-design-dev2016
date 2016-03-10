@@ -157,7 +157,8 @@ _______________________________________  */
             justify-content: flex-start;
             align-items: flex-start;
             padding: 5px 5px 5px 0;
-            width: 729px;
+            width: 729px;   // - 3 column, full screen
+            // width: 465px; - 2 column
         }
         
         .megamenu .megamenu_main li:hover > .left_dropdown {

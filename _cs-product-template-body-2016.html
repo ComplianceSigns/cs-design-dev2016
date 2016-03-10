@@ -40,58 +40,65 @@
                         <div class="cs-btn-green-group-dimmed">
                             <div class="cs-btn-green-dimmed">
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoHoles" data-keyboard="true" data-backdrop="static">Holes</button>
-                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoMaterials" data-keyboard="true" data-backdrop="static">Materials</button>
-                                <button class="btn btn-default" type="button" data-toggle="modal" data-target="#infoSizes" data-keyboard="true" data-backdrop="static">Sizes</button>
-                                <button class="btn btn-default" type="button" data-toggle="modal" data-target="#infoMountingOptions" data-keyboard="true" data-backdrop="static">Mounting Options</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoHoles" data-keyboard="true" data-backdrop="static" data-btn-type="btn-information-holes">Holes</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoMaterials" data-keyboard="true" data-backdrop="static" data-btn-type="btn-information-materials">Materials</button>
+                                <button class="btn btn-default" type="button" data-toggle="modal" data-target="#infoSizes" data-keyboard="true" data-backdrop="static" data-btn-type="btn-information-sizes">Sizes</button>
+                                <button class="btn btn-default" type="button" data-toggle="modal" data-target="#infoMountingOptions" data-keyboard="true" data-backdrop="static" data-btn-type="btn-information-mountingOptions">Mounting Options</button>
                                 [-- IF PRODUCT.MoreInfoImage2 --]
-                                <button type="button" class="btn btn-default cs-btn-green-longer pull-right" data-toggle="modal" data-target="#infoZoom" data-keyboard="true" data-backdrop="static"><span class="glyphicon glyphicon-search">Zoom</span></button>
+                                <button type="button" class="btn btn-default cs-btn-green-longer pull-right" data-toggle="modal" data-target="#infoZoom" data-keyboard="true" data-backdrop="static" data-btn-type="btn-information-zoom"><span class="glyphicon glyphicon-search">Zoom</span></button>
                                 [-- END_IF --] [-- IF PRODUCT.MoreInfoImage2 --]
-                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoLetterHeight" data-keyboard="true" data-backdrop="static">Letter Height</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoLetterHeight" data-keyboard="true" data-backdrop="static" data-btn-type="btn-information-letterHeight">Letter Height</button>
                                 [-- END_IF --] [-- IF PRODUCT.MoreInfoImage3 --]
-                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoViewingDistance" data-keyboard="true" data-backdrop="static">Viewing Distance</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoViewingDistance" data-keyboard="true" data-backdrop="static" data-btn-type="btn-information-viewingDistance">Viewing Distance</button>
                                 [-- END_IF --]
-                                <button type="button" class="btn btn-default cs-btn-green-longer pull-right" data-toggle="modal" data-target="#infoCustomizeNow" data-keyboard="true" data-backdrop="static">Customize Now</button>
+                                <button type="button" class="btn btn-default cs-btn-green-longer pull-right" data-toggle="modal" data-target="#infoCustomizeNow" data-keyboard="true" data-backdrop="static" data-btn-type="btn-information-customizeNow">Customize Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Product Descriptions -->
+                <!-- Product Details -->
                 <div class="col-sm-12 cs-product-details">
                     <div class="line-header">
                         <h2>Product Details</h2>
                     </div>
                     <div id="qbtProductInfoT005b">
-                        <div class="col-sm-6">
-                            <dt>SKU: </dt>
-                            <dd>[--Product.SKU--]</dd>
-                        </div>
                         [-- IF PRODUCT.Field20 --]
                         <div class="col-sm-6">
                             <dt>Standard: </dt>
                             <dd>[--Product.Field20--]</dd>
-                        </div>
-                        [-- END_IF --] [-- IF PRODUCT.Field22 --]
-                        <div class="col-sm-6">
-                            <dt>State: </dt>
-                            <dd>[--Product.Field22--]</dd>
-                        </div>
-                        [-- END_IF --] [-- IF PRODUCT.Field1 --]
-                        <div class="col-sm-6">
-                            <dt>Product Group: </dt>
-                            <dd>[--Product.Field1--]</dd>
-                        </div>
-                        [-- END_IF --] [-- IF PRODUCT.Field2 --]
-                        <div class="col-sm-12">
-                            <dt>Wording: </dt>
-                            <dd class="col-sm-12 truncate-shorter" id="wording">[--Product.Field2--]</dd>
                         </div>
                         [-- END_IF --] [-- IF PRODUCT.Field21 --]
                         <div class="col-sm-6">
                             <dt>Style:</dt>
                             <dd>[--Product.Field21--]</dd>
                         </div>
+                        [-- END_IF --] [-- IF PRODUCT.Field22 --]
+                        <div class="col-sm-6">
+                            <dt>State: </dt>
+                            <dd>[--Product.Field22--]</dd>
+                        </div>
+                        [-- END_IF --] [-- IF PRODUCT.Field6 --]
+                        <div class="col-sm-6">
+                            <dt>Construction: </dt>
+                            <dd>[--Product.Field6--]</dd>
+                        </div>
+                        [-- END_IF --] [-- IF PRODUCT.Field8 --]
+                        <div class="col-sm-6">
+                            <dt>Mounting Option: </dt>
+                            <dd>[--Product.Field8--]</dd>
+                        </div>
+                        [-- END_IF --] [-- IF PRODUCT.Field2 --]
+                        <div class="col-sm-12">
+                            <dt>Wording: </dt>
+                            <dd class="cs-truncate-shorter" id="wording">[--Product.Field2--]</dd>
+                            <a class="cs-truncateShorterLink">more</a>
+                        </div>
                         [-- END_IF --]
+                        <div class="col-sm-12">
+                            <dt>SKU: </dt>
+                            <dd class="cs-truncate-shorter">[--Product.SKU--]</dd>
+                            <a class="cs-truncateShorterLink">more</a>
+                        </div>
                     </div>
                     [-- IF PRODUCT.MoreInfoImage10 --]
                     <div class="field25">
@@ -104,7 +111,7 @@
                     <div class="line-header">
                         <h2>Product Description</h2>
                     </div>
-                    <div class="truncate">
+                    <div class="truncate" data-trunate="moreProductDescription">
                         [-- PRODUCT.MoreInformationText --]
                     </div>
                 </div>
@@ -122,7 +129,7 @@
                                     [-- IF PRODUCT.Field10 --] [-- CALL cs-customoptions-2016.php PRODUCT.Field10 PRODUCT.Recordnumber --] [-- END_IF --]
                                     <div class="col-sm-12">
                                         <div class="line-header">
-                                            <h2>Select Options </h2>
+                                            <h2>Select Material + Size </h2>
                                         </div>
                                     </div>
                                     <form name="mainform" action="[-- SHOPPING_CART_URL BASE --]/order.cgi" method="post" onSubmit="return applyDiscountPrimer(this)">
@@ -145,7 +152,7 @@
                                                 <div class="col-sm-4">
                                                     <label class="cs-label-xl qty-td1" id="qty-td1">Quantity</label>
                                                     <div class="form-group qty-td2">
-                                                        <input type="text" class="form-control" id="qnty" size="2" name="[-- PRODUCT.RECORDNUMBER --]:qnty" value="1" placeholder="1">
+                                                        <input type="text" class="form-control numeric" id="qnty" size="2" name="[-- PRODUCT.RECORDNUMBER --]:qnty" value="1" placeholder="1">
                                                     </div>
                                                     <div class="col-xs-12">
                                                         <div class="cs-calculate-discount"><a href="#">Calculate Discount</a></div>
@@ -155,9 +162,6 @@
                                                     <label class="cs-label-xl" id='qbtTotalPriceDiv'>Total:&nbsp;</label>
                                                     <div class="cs-label-sm-orange currency" id='qbtPriceEachDiv'>Price Each:&nbsp;</div>
                                                     <div class="cs-label-sm-orange currency" id='qbtSavingsDiscount'></div>
-                                                    <!-- <div id='qbtSavingsDiv'>
-                                <span id='qbtSavingsSpan'></span>
-                    </div> -->
                                                 </div>
                                                 <div class="col-sm-3">
                                                     <div class="form-group pull-right qty-td3">

@@ -42,7 +42,7 @@ body,
     label.cs-label-xl {
         color: $green;
         @include font-condensed;
-        font-size: $font-size-base + 10;
+        font-size: $font-size-base + 8;
         margin-bottom: 0;
         padding-top: 8px;
     }

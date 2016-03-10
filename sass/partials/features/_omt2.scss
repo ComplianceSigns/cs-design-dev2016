@@ -59,9 +59,6 @@ cs-pp-rightWorkArea
     border-radius: 3px;
     border: 1px solid $green;
     float: left;
-    .line-header h2  {
-        background: $lightest-green;
-    }
     form {
         padding-top: 10px;
         float: left;
@@ -76,6 +73,20 @@ cs-pp-rightWorkArea
         font-size: 14px;
         color: #000000;
         text-decoration: none;
+    }
+    .line-header h2 {
+        background: $lightest-green;
+        //the orange arrow
+        &:before {
+            font-family: "FontAwesome";
+            font-size: 32px;
+            color: $orange;
+            content: "\f061";
+            padding-right: 10px;
+            padding-left: 14px;
+            position: relative;
+            top: 4px;
+        }
     }
     #tabs_1 {
         width: 100%; // changed this from a 458px to percentage
@@ -220,7 +231,7 @@ input.cs-cart-btn {
 
 .cs-enter-text {
     display: inline-block;
-    padding: 0 10px 20px 10px;
+    padding: 0 10px 20px 60px;
     width: 100%;
     span {
         display: inline-block;
@@ -232,7 +243,7 @@ input.cs-cart-btn {
     }
     input#freeoptinput {
         margin-left: 0px;
-        width: 50%;
+        width: 65%;
         padding: 3px;
     }
 }
