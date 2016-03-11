@@ -1,56 +1,149 @@
   /*  putting the sizes in for the grid - an attempt to make bootstrap's styles work with minimal bloat  */
   
-  .col-xs-1,  .col-sm-1,  .col-md-1, .col-lg-1 {
-
-  }
-  .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2 {
-
-  }
-  .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3 {
-
-  }
-  .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4 {
-
-  }
-  .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5 {
-
-  }
-  .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6 {
-
-  }
-  .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7 {
-
-  }
-  .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8 {
-
-  }
-  .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9 {
-
-  }
-  .col-xs-10, .col-sm-10, .col-md-10,  .col-lg-10 {
-
-  }
-  .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11 {
-
-  }
-  .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-
+  img {
+      -ms-interpolation-mode: bicubic;
   }
   
+  div {
+      float: left;
+  }
+  /* Center the page  */
+  
+  div.centerbox-outer {
+      margin: 0 auto;
+      float: left;
+      left: 50%;
+      position: relative;
+  }
+  
+  div.centerbox-inner {
+      float: left;
+      position: relative;
+      right: 50%;
+  }
+  
+  // .col-xs-1,
+  // .col-sm-1,
+  // .col-md-1,
+  // .col-lg-1 {
+  //     width: 81px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-2,
+  // .col-sm-2,
+  // .col-md-2,
+  // .col-lg-2 {
+  //     width: 163px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-3,
+  // .col-sm-3,
+  // .col-md-3,
+  // .col-lg-3 {
+  //     width: 245px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-4,
+  // .col-sm-4,
+  // .col-md-4,
+  // .col-lg-4 {
+  //     width: 327px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-5,
+  // .col-sm-5,
+  // .col-md-5,
+  // .col-lg-5 {
+  //     width: 409px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-6,
+  // .col-sm-6,
+  // .col-md-6,
+  // .col-lg-6 {
+  //     width: 491px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-7,
+  // .col-sm-7,
+  // .col-md-7,
+  // .col-lg-7 {
+  //     width: 573px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-8,
+  // .col-sm-8,
+  // .col-md-8,
+  // .col-lg-8 {
+  //     width: 655px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-9,
+  // .col-sm-9,
+  // .col-md-9,
+  // .col-lg-9 {
+  //     width: 737px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-10,
+  // .col-sm-10,
+  // .col-md-10,
+  // .col-lg-10 {
+  //     width: 819px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-11,
+  // .col-sm-11,
+  // .col-md-11,
+  // .col-lg-11 {
+  //     width: 901px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
+  // .col-xs-12,
+  // .col-sm-12,
+  // .col-md-12,
+  // .col-lg-12 {
+  //     width: 983px;
+  //     display: inline;
+  //     float: left;
+  //     position: relative;
+  // }
   body {
       background-color: #718fb3;
   }
   
   .col-sm-10 {
       width: 80%;
-      display: inline-block;
+      display: inline;
       float: left;
       position: relative;
   }
   
   .cs-csg3-options .col-sm-2 {
       width: 20%;
-      display: inline-block;
+      display: inline;
       float: left;
       position: relative;
   }
@@ -71,13 +164,13 @@
       padding: 0;
       margin: 0px 8px 8px 8px;
       color: #417c61;
-      border-bottom: 1px solid #417c61;
+      //border-bottom: 1px solid #417c61;
   }
   /* StreetSign Generator overrides  */
   
   .cs-csg3-leftWorkArea {
       width: 35%;
-      display: inline-block;
+      display: inline;
       float: left;
       position: relative;
       padding-left: 1%;
@@ -100,7 +193,7 @@
   
   .cs-csg3-rightWorkText {
       width: 56%;
-      display: inline-block;
+      display: inline;
       float: left;
       position: relative;
       padding-left: 1%;
@@ -356,7 +449,7 @@
   
   .cs-csg3-form-inline,
   .cs-csg3-form-inline .form-group {
-      display: inline-block;
+      display: inline;
       padding-left: 4px;
       padding-right: 8px;
       padding-top: 12px;
@@ -366,10 +459,88 @@
       display: inline;
   }
   
+  .cs-miniCart .pull-right,
+  .cs-standards-icons .pull-right {
+      float: right;
+      display: inline;
+  }
+  /*  Product Template  */
+  
+  .cs-navbar-constrain {
+      display: inline;
+      .cs-navbar-constrain {
+          + .col-sm-4.col-md-3 {
+              position: static;
+              padding-top: 0;
+              margin-top: 0;
+              width: 315px;
+          }
+          + .col-sm8.col-md-9 {
+              //position: absolute;
+              float: right;
+              top: 10px;
+              text-align: right;
+              width: 655px;
+          }
+          + .col-sm-8.cs-standards-icons {
+              position: static;
+              top: 60px;
+          }
+      }
+  }
+  
   .cs-pp-template,
+  .cs-navbar-constrain,
   .navbar,
-  {
+  .cs-marketing-square-container,
+  .cs-flexbox-container,
+  .cs-ribbon,
+  .cs-big-footer,
+  .cs-copyright,
+  .cs-link-strip-upper,
+  .cs-link-list,
+  .cs-link-strip-lower {
       width: 983px;
+      text-align: justify;
+  }
+  
+  .container {
+      margin: 0 auto;
+      float: left;
+      //position: relative;
+      text-align: left;
+  }
+  
+  .ie-center-page {
+      margin: 0 auto;
+  }
+  
+  .cs-pp-leftWorkArea {
+      width: 40%;
+  }
+  
+  .cs-pp-template .cs-pp-leftWorkArea .cs-pp-info .moreinfo-td1 {
+      width: 300px;
+      height: 300px;
+      float: left;
+      text-align: left;
+  }
+  
+  .moreinfo-td2 {}
+  
+  .cs-pp-omt.col-sm-12,
+  .qbtProductFormT005b,
+  table,
+  .qbtProductFormT005b form,
+  #tabs1content {
+      width: 400px;
+  }
+  
+  .moreinfo-td1 .slider-for {
+      width: 300px;
+      height: 300px;
+      float: left;
+      text-align: left;
   }
   
   .modal {
