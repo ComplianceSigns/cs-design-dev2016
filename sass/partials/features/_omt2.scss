@@ -55,7 +55,7 @@ cs-pp-rightWorkArea
 //Controls for the green box and outline around OMT (also the add to cart functionality)
 #qbtProductFormT005b {
     background-color: $lightest-green;
-    padding: 20px 0 0 0;
+    padding: 0px 0 0 0;
     border-radius: 3px;
     border: 1px solid $green;
     float: left;
@@ -231,7 +231,7 @@ input.cs-cart-btn {
 
 .cs-enter-text {
     display: inline-block;
-    padding: 0 10px 20px 60px;
+    padding: 0 10px 0px 60px;
     width: 100%;
     span {
         display: inline-block;
@@ -249,5 +249,5 @@ input.cs-cart-btn {
 }
 
 div#qbtProductFormT005b > h2 {
-    margin: 10px 16px 0px 16px;
+    margin: 0px 16px 0px 16px;
 }
