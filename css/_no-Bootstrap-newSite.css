@@ -1,0 +1,2664 @@
+/* # controls import order, all the Newsite stuff EXCEPT no bootstrap, for ie8 and older */
+/* ---------------- # SCSS files for Compliance Signs website - ---------------- */
+/* ------------- # All non-renderable scss: Include to get all modules ------------ */
+/* ---------------------- # Color variables : All color variables ---------------------- */
+/* These are temporary colors to make the file work until I clear out all the unneeded variables  */
+/* Button variables  */
+/* # Link to colors module */
+/* ---------------- # Variables: ---------------- */
+/* # Link to variables module */
+/* ---------------- FORM ITEMS - LABELS, BUTTONS etc MIXINS ---------------- */
+/* # Link to mixins module */
+/* # functions, like determining light or dark text based on background lightness*/
+/* # all z-indexes using sass get-map */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
+}
+/* ---------------- Street Sign Generator - labels for Controls ---------------- */
+body a,
+body p,
+body div,
+.cs-main a,
+.cs-main p,
+.cs-main div {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.cs-main {
+  margin: 0;
+  padding: 0;
+}
+.cs-main p.disclaimer-small {
+  color: #bcbec0;
+  font-size: 9px;
+}
+.cs-main label.cs-label-xl {
+  color: #417c61;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 22px;
+  margin-bottom: 0;
+  padding-top: 8px;
+}
+.cs-main h1 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 20px 8px 4px 8px;
+  margin: 0;
+  text-decoration: none;
+  color: #5D5E5E;
+}
+.cs-main h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0px 8px 8px 8px;
+  color: #386b54;
+  text-decoration: none;
+  line-height: 28px;
+  background: #fff;
+  padding: 10px 15px 10px 10px;
+  padding: 10px 15px 5px 0px;
+  margin: -123px 0px 12px 0px;
+  margin: -123px 0px 5px 0px;
+  display: inline-block;
+}
+.cs-main h3 {
+  font-size: 15px;
+  font-weight: medium;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #386b54;
+  text-decoration: none;
+}
+.cs-main .line-header {
+  border-top: 1px solid #417c61;
+  margin-top: 32px;
+  padding-bottom: 0px;
+  line-height: 3px;
+}
+
+/*  Icons   */
+span.icon {
+  font-family: 'Glyphicons Halflings';
+}
+
+.dropdown_arrow a::after {
+  font-family: 'Glyphicons Halflings';
+}
+
+/* # All font families and structure for font style elements  */
+/* # All Modules */
+.cs-main.cs-pp-template {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea {
+  padding: 0 10px 20px 20px;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-pp-slider-wrapper {
+  width: 380px;
+  padding: 0 20px;
+  float: left;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-pp-info .moreinfo-td1 {
+  text-align: center;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-pp-info .moreinfo-td1 + .moreinfo-td1 {
+  padding: 0 20px;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-information-block {
+  margin-top: 20px;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-product-details {
+  margin-top: 20px;
+  padding: 8px;
+  float: left;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-product-details div > div {
+  margin-top: 10px;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-product-details dt {
+  text-transform: capitalize;
+  color: #417c61;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-product-details dd {
+  text-transform: inherit;
+  color: #6D6E71;
+  font-size: 12px;
+  font-weight: 14px;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+  padding: 0;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-product-details span {
+  font-size: 17px;
+  padding-left: 20px;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-product-details a span.glyphicon {
+  color: #417c61;
+}
+.cs-main.cs-pp-template .cs-pp-leftWorkArea .cs-product-details a span.glyphicon:hover {
+  color: #274a3a;
+}
+.cs-main.cs-pp-template .cs-product-description {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  line-height: 13px;
+  padding: 10px 10px 10px 16px;
+}
+.cs-main.cs-pp-template .cs-product-description blockquote {
+  border-left: none;
+  padding: 5px 20px 0px 10px;
+}
+.cs-main.cs-pp-template .cs-product-description b {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  line-height: 13px;
+  margin: 5px 0px 0px 0px;
+  padding: 0;
+  display: inline-block;
+}
+.cs-main.cs-pp-template .cs-product-description b:before, .cs-main.cs-pp-template .cs-product-description b:after {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+.cs-main.cs-pp-template p > b {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.cs-pp-rightWorkArea {
+  float: left;
+  padding: 20px 30px 20px 10px;
+}
+
+p.disclaimer-small {
+  padding-left: 40px;
+}
+
+.cs-add-to-cart {
+  overflow: hidden;
+}
+.cs-add-to-cart .form-group.qty-td2 {
+  width: 65px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  position: relative;
+  top: -4px;
+}
+.cs-add-to-cart .form-group.qty-td2 input {
+  padding: 0 6px;
+  height: 30px;
+}
+.cs-add-to-cart .form-group.qty-td2 input[type=text] {
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-radius: 0;
+}
+
+div#qbtQttyInnerTable {
+  padding: 0 20px;
+}
+div#qbtQttyInnerTable div:first-of-type,
+div#qbtQttyInnerTable div + div + div {
+  padding: 0;
+}
+div#qbtQttyInnerTable div:first-of-type div,
+div#qbtQttyInnerTable div + div + div div {
+  padding-left: 5px;
+}
+
+.cs-calculate-discount {
+  margin: 0px 0 0 60px;
+  position: relative;
+  top: -3px;
+}
+.cs-calculate-discount a {
+  font-size: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: underline;
+  font-weight: 14px;
+  color: #939598;
+}
+.cs-calculate-discount a:hover {
+  color: #F5952E;
+}
+
+/* Add to cart labels for Price Each and Total Savings */
+.cs-label-sm-orange {
+  font-size: 12px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #5D5E5E;
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Trust Pilot Widget  */
+div#qbtSavingsYou {
+  float: left;
+  color: #F5952E;
+  font-size: 17px;
+  display: inline-block;
+  border: 1px solid #F5952E;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 20px;
+  position: absolute;
+  top: 102px;
+  right: 10px;
+}
+
+.trustpilot-widget {
+  padding-top: 20px;
+  height: 40px;
+}
+
+.cs-volume-discount {
+  padding: 30px 10px 20px 10px;
+}
+.cs-volume-discount p.disclaimer-small {
+  padding-left: 10px;
+  margin-top: -5px;
+}
+.cs-volume-discount #cs-volume-purchasing-1 {
+  min-width: 320px;
+}
+.cs-volume-discount #cs-volume-purchasing-2 {
+  min-width: 250px;
+}
+.cs-volume-discount #cs-volume-purchasing-1,
+.cs-volume-discount #cs-volume-purchasing-2 {
+  margin: 0 10px 10px 10px;
+  border: none;
+  float: left;
+}
+.cs-volume-discount #cs-volume-purchasing-1 th,
+.cs-volume-discount #cs-volume-purchasing-2 th {
+  color: #6D6E71;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  padding-right: 0px;
+  background: #ebf5f0;
+  border: none;
+  text-align: center;
+}
+.cs-volume-discount #cs-volume-purchasing-1 td,
+.cs-volume-discount #cs-volume-purchasing-2 td {
+  color: #6D6E71;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  padding: 4px 2px;
+  text-align: center;
+}
+.cs-volume-discount #cs-volume-purchasing-1 td.selected,
+.cs-volume-discount #cs-volume-purchasing-2 td.selected {
+  color: #231F20;
+  font-weight: bold;
+  font-size: 15px;
+}
+.cs-volume-discount #cs-volume-purchasing-1 td:first-child,
+.cs-volume-discount #cs-volume-purchasing-2 td:first-child {
+  font-weight: bold;
+}
+
+.cs-customer-reviews {
+  margin-bottom: 20px;
+}
+.cs-customer-reviews .cs-customer-review-divider {
+  margin: 10px;
+  border-top: 1px dotted #b2d7c6;
+}
+.cs-customer-reviews .cs-customer-review-stars {
+  display: inline-block;
+  padding-left: 8px;
+}
+.cs-customer-reviews .cs-customer-review-stars span.glyphicon.glyphicon-star {
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  border: 1px solid orange;
+  padding: 3px;
+  color: orange;
+}
+.cs-customer-reviews .cs-customer-review-stars.disabled {
+  color: #939598;
+}
+.cs-customer-reviews .cs-customer-review-stars-ratings {
+  display: inline-block;
+}
+.cs-customer-reviews .cs-customer-review-stars-ratings span {
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #231F20;
+  font-weight: bold;
+}
+.cs-customer-reviews h3.cs-customer-review-healine {
+  padding-left: 8px;
+  font-family: 'Roboto', sans-serif;
+  color: #231F20;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.cs-customer-reviews blockquote {
+  border-left: none;
+  padding: 5px 20px 0px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.cs-customer-reviews p.cs-customer-review-author {
+  padding-left: 8px;
+  margin: 0;
+  font-size: 10px;
+}
+.cs-customer-reviews p.cs-customer-review-origin {
+  padding-left: 8px;
+  margin: 0;
+}
+.cs-customer-reviews p.cs-customer-review-origin span {
+  font-size: 10px;
+}
+
+.moreinfo-td2 {
+  vertical-align: top;
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.productinfo {
+  padding: 0 0 6px 0;
+}
+
+.cs-soc-med {
+  position: absolute;
+  bottom: 15px;
+  margin: -20px 0 0 0;
+  width: 40%;
+  right: 0;
+}
+
+/*  Layout for the Street Sign Custom Page -  most of the code is in buttons2, _mixins and functions.  */
+.cs-csg3-street > div {
+  padding: 0;
+}
+.cs-csg3-street .cs-csg3-options {
+  margin: 0;
+  padding: 0;
+}
+.cs-csg3-street .cs-csg3-steps {
+  margin-top: 4px;
+}
+.cs-csg3-street .cs-csg3-leftWorkArea {
+  margin: 0px;
+}
+.cs-csg3-street .cs-csg3-leftWorkArea .cs-csg3-options > .btn-group {
+  padding-top: 15px;
+}
+.cs-csg3-street .cs-csg3-leftWorkArea .cs-csg3-options > .btn-group > .btn-group {
+  border: 1px solid #A7A9AC;
+  border-radius: 4px;
+  background: #E6E7E8;
+}
+.cs-csg3-street .cs-csg3-rightWorkText {
+  padding-left: 20px;
+}
+.cs-csg3-street .cs-csg3-rightWorkText > div {
+  padding: 0;
+}
+.cs-csg3-street .cs-csg3-rightWorkText .cs-csg3-sizeIndicator {
+  float: right;
+}
+.cs-csg3-street .cs-csg3-rightWorkText h3 {
+  text-align: right;
+}
+.cs-csg3-street .cs-csg3-rightWorkText .cs-csg3-signArea {
+  min-height: 180px;
+}
+.cs-csg3-street .cs-csg3-rightWorkText .cs-btn-group-dimmed {
+  height: 20px;
+  width: 100%;
+  float: left;
+  padding-right: 10px;
+}
+.cs-csg3-street .cs-csg-textEditArea .form-inline,
+.cs-csg3-street .cs-csg-textEditArea .form-group {
+  display: inline-block;
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-right: 0;
+}
+.cs-csg3-street .cs-csg-textEditArea input.form-control {
+  width: 94px;
+  border-radius: 0;
+}
+.cs-csg3-street .cs-csg-textEditArea input.form-control.cs-csg-input-long {
+  width: 100%;
+}
+
+/* # Street Sign CSG Styles */
+.loading {
+  margin: auto;
+}
+
+.loading span {
+  line-height: 32px;
+  margin-left: 12px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.loading img {
+  vertical-align: middle;
+}
+
+.loading_wrp {
+  background-color: #FFF;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1020;
+}
+
+.loading_wrp .x16 span {
+  line-height: 16px;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.loading_wrp .x32 img {
+  width: 32px;
+  height: 32px;
+}
+
+/* ---------------- Header Classes ---------------- */
+/* static/fixed version of the navbar for review */
+nav.cs-fixed-navbar {
+  font-size: 30px;
+  margin-bottom: 0;
+  border: none;
+}
+
+.cs-fixed-navbar .cs-navbar-constrain {
+  background: #ffffff;
+  padding-right: 5px;
+  position: relative;
+  background: #ffffff;
+  height: 132px;
+}
+.cs-fixed-navbar .cs-navbar-constrain > div {
+  padding: 0;
+}
+.cs-fixed-navbar .cs-navbar-constrain img.cs-logo {
+  z-index: -1;
+}
+.cs-fixed-navbar .cs-navbar-constrain .cs-standards-icons {
+  padding: 0 0 3px 0;
+}
+.cs-fixed-navbar .cs-navbar-constrain .cs-standards-icons img {
+  max-width: 284px;
+}
+.cs-fixed-navbar ul.nav.navbar-nav {
+  padding-top: 10px;
+  padding-bottom: 0;
+  height: 36px;
+}
+.cs-fixed-navbar .navbar-nav > li {
+  display: inline-block;
+}
+.cs-fixed-navbar .navbar-nav > li.cs-email {
+  padding-bottom: 0;
+}
+.cs-fixed-navbar .navbar-nav > li.cs-email > a:hover img {
+  height: auto;
+  width: auto;
+  text-decoration: underline;
+  padding-top: 0;
+}
+.cs-fixed-navbar .navbar-nav > li.cs-email a img {
+  margin-top: -22px;
+}
+.cs-fixed-navbar .navbar-nav > li.cs-email img {
+  margin-top: -8px;
+}
+.cs-fixed-navbar .navbar-nav > li > a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #01111f;
+  font-family: 'Roboto', sans-serif;
+  font-size: font-normal-size-1;
+  color: #06559a;
+  font-weight: normal;
+  text-decoration: none;
+  padding-top: 4px;
+  display: inline-block;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 4px;
+}
+.cs-fixed-navbar .navbar-nav > li img {
+  margin-top: -2px;
+}
+.cs-fixed-navbar .navbar-nav > li > a:focus,
+.cs-fixed-navbar .navbar-nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: #01111f;
+  font-family: 'Roboto', sans-serif;
+  font-size: font-normal-size-1;
+  color: #06559a;
+  font-weight: normal;
+  text-decoration: none;
+}
+.cs-fixed-navbar .navbar-nav > li > a:focus:hover,
+.cs-fixed-navbar .navbar-nav > li > a:hover:hover {
+  text-decoration: underline;
+}
+.cs-fixed-navbar .navbar-nav > li > a:focus img,
+.cs-fixed-navbar .navbar-nav > li > a:hover img {
+  display: inline-block;
+  height: 9px;
+  width: 1px;
+}
+.cs-fixed-navbar .cs-no-link,
+.cs-fixed-navbar .cs-no-link a,
+.cs-fixed-navbar .cs-no-link:hover,
+.cs-fixed-navbar .cs-no-link a:hover,
+.cs-fixed-navbar a.cs-phone.mailtToSupport,
+.cs-fixed-navbar .nav > li > a.cs-phone:hover {
+  cursor: default;
+  text-decoration: none;
+  color: #06559a;
+  font-weight: bold;
+  font-size: 14px;
+}
+.cs-fixed-navbar .cs-no-link:first-child {
+  font-weight: normal;
+  font-size: 12px;
+}
+.cs-fixed-navbar .cs-phone:hover {
+  text-decoration: none;
+}
+.cs-fixed-navbar .cs-email,
+.cs-fixed-navbar .cs-email a {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.cs-fixed-navbar .cs-cart,
+.cs-fixed-navbar .cs-cart:hover {
+  text-align: -9999px;
+  font-size: .01px;
+}
+.cs-fixed-navbar li.cs-miniCart {
+  display: inline-block;
+  padding: 4px 15px 0 15px;
+}
+.cs-fixed-navbar li.cs-miniCart:hover {
+  text-decoration: underline;
+}
+.cs-fixed-navbar li.cs-miniCart a.cs-cart {
+  display: none;
+}
+.cs-fixed-navbar a.MiniCart {
+  font-weight: bold;
+  font-size: 9px;
+}
+
+/* # Primary : Header classes */
+/* ---------------- Search Bar inside Header ---------------- */
+.cs-flexbox-container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.cs-flexbox-child {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+span.fa.fa-search {
+  display: inline;
+  position: absolute;
+  width: 25%;
+  text-align: center;
+  padding-top: 4px;
+  z-index: 1;
+}
+span.fa.fa-search::before {
+  color: #ffffff;
+  font-size: 18px;
+  padding-right: 10px;
+}
+span.fa.fa-search::after {
+  content: 'SEARCH';
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cs-search-orange {
+  border-radius: 4px;
+  height: 47px;
+  background: #F5952E;
+  border: 4px solid #F5952E;
+  border: 10px solid #F5952E;
+  flex-grow: 9;
+}
+.cs-search-orange form {
+  position: relative;
+}
+.cs-search-orange form input#sli_search_1 {
+  width: calc(75% - 20px);
+  height: 26px;
+  padding: 10px;
+  font-size: 14px;
+  margin: 0px 3px 6px 6px;
+  border-radius: 4px;
+  border: none;
+}
+.cs-search-orange form input.cs-search-btn {
+  width: 169px;
+  width: calc(25% - 6px);
+  height: 26px;
+  background: #06559a;
+  font-size: 15px;
+  margin: 0px 6px 6px 3px;
+  border-radius: 4px;
+  border: none;
+}
+.cs-search-orange form .cs-search-btn-container {
+  display: initial;
+}
+.cs-search-orange form .cs-search-btn-container:hover input.cs-search-btn {
+  background-color: #032c50;
+}
+
+.cs-create-custom-btn {
+  max-width: 154px;
+  height: 46px;
+  background-color: #718fb3;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 5px;
+  flex-grow: 1;
+}
+.cs-create-custom-btn a h3 {
+  color: #ffffff;
+  float: left;
+  padding: 6px 11px;
+  margin: 0;
+  font-weight: normal;
+  line-height: 17px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+}
+.cs-create-custom-btn a h3:hover {
+  background-color: #06559a;
+}
+
+/* Search bar that appears in the header   */
+/*  ----------------------------  BUTTONS  -----------------------------   */
+/*  much of the real button code is created in mixins  */
+.cs-main {
+  /* ---------------- # Buttons: CSG Street Sign Generator buttons ---------------- */
+  /* Button Containers / designating number of buttons that fill the full width */
+  /* ---------------- # Buttons: CSG Street Sign Generator buttons - dIMMED MEDIUM PREVIEW, SAVE, RETRIEVE ETC---------------- */
+  /* Buttons for the Product Page  - Information section, green text and outline, dimm  */
+  /*  ---------------------    social media icons  -------   */
+  /* First Button - My Signs */
+  /* all three buttons  */
+  /*fixing the button group borders */
+  /* ---------   Marketing Square Buttons - in cs-product-marketing-square --------------------   */
+  /* ---------   Models Buttons  --------------------   */
+}
+.cs-main .btn-group {
+  display: block;
+  width: 100%;
+  border: #A7A9AC;
+  background: #ffffff;
+  border-radius: 4px;
+}
+.cs-main .btn-group button {
+  color: #A7A9AC;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  height: 38px;
+  font-size: 17px;
+  background: #E6E7E8;
+  padding: 4px;
+  margin: 0;
+  border-style: solid;
+  border-width: 1 px;
+  border-color: #E6E7E8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.cs-main .btn-group button.bu-selected {
+  color: #231F20;
+  background: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  height: 38px;
+  font-size: 17px;
+  border: 2px solid #F5952E;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.cs-main .btn-group button.cs-btn-smaller-text {
+  font-size: 15px;
+  line-height: 13px;
+}
+.cs-main .btn-group button:hover {
+  background-color: whitesmoke;
+}
+.cs-main .btn-group label {
+  color: #A7A9AC;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+.cs-main .btn-group button {
+  border: 1px solid #BCBEC0;
+}
+.cs-main .btn-group .cs-btn-color-blue {
+  background: #00529B;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.cs-main .btn-group .cs-btn-color-blue:hover {
+  background-color: #004787;
+}
+.cs-main .btn-group .cs-btn-color-blue.bu-selected {
+  background: #00529B;
+  color: #ffffff;
+}
+.cs-main .btn-group .cs-btn-color-white {
+  background: #ffffff;
+  color: #231F20;
+  border-radius: 4px;
+}
+.cs-main .btn-group .cs-btn-color-white:hover {
+  background-color: whitesmoke;
+}
+.cs-main .btn-group .cs-btn-color-white.bu-selected {
+  background: #ffffff;
+  color: #231F20;
+}
+.cs-main .btn-group .cs-btn-color-green {
+  background: #00824C;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.cs-main .btn-group .cs-btn-color-green:hover {
+  background-color: #006e40;
+}
+.cs-main .btn-group .cs-btn-color-green.bu-selected {
+  background: #00824C;
+  color: #ffffff;
+}
+.cs-main .btn-group .cs-btn-color-brown {
+  background: #6D3A1C;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.cs-main .btn-group .cs-btn-color-brown:hover {
+  background-color: #5d3118;
+}
+.cs-main .btn-group .cs-btn-color-brown.bu-selected {
+  background: #6D3A1C;
+  color: #ffffff;
+}
+.cs-main .cs-btn-two-Bu {
+  padding-top: 0px;
+}
+.cs-main .cs-btn-two-Bu button {
+  width: 50%;
+}
+.cs-main .cs-btn-three-Bu {
+  padding-top: 0px;
+}
+.cs-main .cs-btn-three-Bu button {
+  width: 33.33333%;
+}
+.cs-main .cs-btn-four-Bu {
+  padding-top: 0px;
+}
+.cs-main .cs-btn-four-Bu button {
+  width: 25%;
+}
+.cs-main .cs-btn-borders {
+  border: 2px solid #ffffff;
+}
+.cs-main .cs-btn-dimmed {
+  display: block;
+  border: #E6E7E8;
+  border-radius: 4px;
+}
+.cs-main .cs-btn-dimmed button {
+  color: #A7A9AC;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  height: 38px;
+  font-size: 17px;
+  background: #E6E7E8;
+  padding: 4px;
+  margin: 0;
+  border-style: solid;
+  border-width: 1 px;
+  border-color: #E6E7E8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  transition: border-color .6s, color .6s;
+}
+.cs-main .cs-btn-dimmed button.bu-selected {
+  color: #231F20;
+  background: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  height: 38px;
+  font-size: 17px;
+  border: 2px solid #F5952E;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.cs-main .cs-btn-dimmed button.cs-btn-smaller-text {
+  font-size: 10px;
+  line-height: 13px;
+}
+.cs-main .cs-btn-dimmed button:hover {
+  background-color: whitesmoke;
+}
+.cs-main .cs-btn-dimmed label {
+  color: #A7A9AC;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+.cs-main .cs-btn-dimmed button {
+  padding: 4px 12px;
+  font-size: 12px;
+  transition: border-color .4s, color .4s, background-color .4s;
+}
+.cs-main .cs-csg3-form-inline label {
+  color: #A7A9AC;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+.cs-main .cs-btn-green-group-dimmed {
+  display: inline-block;
+  padding: 0;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed {
+  display: block;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed a {
+  display: inline-block;
+  float: left;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed a.pull-right {
+  clear: right;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed a button:hover {
+  color: #ffffff;
+  border-color: #417c61;
+  background-color: #417c61;
+  transition: border-color .4s, color .4s, background-color .4s;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed button {
+  color: #417c61;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  height: 32px;
+  font-size: 12px;
+  background: #ffffff;
+  padding: 2px 6px;
+  margin: 0;
+  border-style: solid;
+  border-width: 1 px;
+  border-color: #b2d7c6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  white-space: normal;
+  vertical-align: top;
+  margin-top: 4px;
+  line-height: 12px;
+  transition: border-color .6s, color .6s;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed button:hover {
+  color: #417c61;
+  border-color: #417c61;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed .glyphicon-search:before {
+  content: "\e003";
+  padding: 0px 5px 0 1px;
+  font-size: 11px;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed button {
+  width: 62px;
+  color: #417c61;
+  border-color: #417c61;
+  background-color: #ffffff;
+  transition: border-color .4s, color .4s, background-color .4s;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed button:hover {
+  color: #ffffff;
+  border-color: #417c61;
+  background-color: #417c61;
+  transition: border-color .4s, color .4s, background-color .4s;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed button:focus, .cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed button:active {
+  outline: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.cs-main .cs-btn-green-group-dimmed .cs-btn-green-dimmed .cs-btn-green-longer button {
+  width: 80px;
+}
+.cs-main .cs-btn-green-soc-med button:first-of-type {
+  margin-right: 0px;
+}
+.cs-main .cs-btn-green-group-soc-med button,
+.cs-main .cs-btn-green-soc-med button {
+  background: #ffffff;
+  border: none;
+  height: 38px;
+  transition: background-color .8s;
+  margin-right: 10px;
+  float: right;
+  width: auto;
+  padding: 2px 5px;
+}
+.cs-main .cs-btn-green-group-soc-med button:hover,
+.cs-main .cs-btn-green-soc-med button:hover {
+  color: #5D5E5E;
+  background: #ffffff;
+  transition: color .25s;
+}
+.cs-main .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left: none;
+}
+.cs-main .cs-btn-green-group-soc-med button {
+  padding-left: 0px;
+}
+.cs-main .cs-btn-green-group-soc-med button span.fa {
+  font-family: "Fontawesome";
+  padding: 0 0 0 10px;
+}
+.cs-main .cs-btn-green-group-soc-med button span.fa:before {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #A7A9AC;
+  color: #A7A9AC;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 5px;
+  transition: background-color .8s;
+}
+.cs-main .cs-btn-green-group-soc-med button span.fa:after {
+  padding: 0 10px 0 4px;
+}
+.cs-main .cs-btn-green-group-soc-med button span.fa.fa-heart:before {
+  padding: 6px 5px 5px 5px;
+  color: #A7A9AC;
+}
+.cs-main .cs-btn-green-group-soc-med button span.cs-socmed-text {
+  color: #A7A9AC;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0 5px 0 5px;
+}
+.cs-main .cs-btn-green-group-soc-med button:hover span.fa:before {
+  border: 1px solid #5D5E5E;
+  color: #5D5E5E;
+  transition: border .2s, color .2s;
+}
+.cs-main .cs-btn-green-group-soc-med button:hover span.fa:after {
+  color: #5D5E5E;
+  transition: color .2s;
+}
+.cs-main .cs-btn-green-group-soc-med button:hover span.cs-socmed-text {
+  color: #5D5E5E;
+  transition: color .2s;
+}
+.cs-main .cs-btn-green-soc-med {
+  display: block;
+  float: right;
+}
+.cs-main .cs-btn-green-soc-med button span.fa {
+  font-family: "Fontawesome";
+  padding: 0 0 0 14px;
+}
+.cs-main .cs-btn-green-soc-med button span.fa:before {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #A7A9AC;
+  color: #A7A9AC;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 5px;
+  transition: background-color .8s;
+}
+.cs-main .cs-btn-green-soc-med button span.fa:after {
+  padding: 0 10px 0 4px;
+}
+.cs-main .cs-btn-green-soc-med button span.cs-socmed-text {
+  color: #A7A9AC;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  padding: 0 5px 0 5px;
+  font-size: 13px;
+}
+.cs-main .cs-btn-green-soc-med button span.cs-socmed-text:after {
+  padding: 0 8px 0 4px;
+}
+.cs-main .cs-btn-green-soc-med button:hover span.fa:before {
+  border: 1px solid #5D5E5E;
+  color: #5D5E5E;
+  background: #ffffff;
+  transition: border .2s, color .2s;
+}
+.cs-main .cs-btn-green-soc-med button:hover span.fa:after {
+  color: #5D5E5E;
+  background: #ffffff;
+  transition: color .2s;
+}
+.cs-main .cs-btn-green-soc-med button:hover .cs-socmed-text {
+  color: #5D5E5E;
+}
+.cs-main button.close:focus, .cs-main button.close:active, .cs-main button.close:active {
+  outline: none;
+}
+
+/*  link for Truncation - jquery.shorten.min - Read More and Read Less  */
+.truncate {
+  z-index: 4;
+}
+
+.morelink {
+  float: right;
+  margin-right: 30px;
+  padding: 0;
+}
+
+/* # All Buttons */
+        /*
+
+Item Name : Vertical CSS3 Mega Menu
+Author URI : http://codecanyon.net/user/Pixelworkshop/
+Version : 1.0
+*/
+        /*
+
+TABLE OF CONTENTS
+
+00 PAGE STYLING (REMOVABLE)
+01 MENU BUTTON
+   1. Mega Menu Container
+   2. Mega Menu Button
+02 DROP DOWNS
+   1. Drop Downs Default Behavior
+   2. Fade Transition
+   3. Slide Transition
+   4. Toggle Transition
+03 DROP DOWN ELEMENTS
+   1. Arrows
+   2. List Elements
+   3. Typography
+   4. Icons
+   5. Large Icons
+
+*/
+        /*  _______________________________________
+ 
+ 01 MENU BUTTON
+_______________________________________  */
+/* 1. Mega Menu Container */
+.megamenu_container {
+  max-width: 230px;
+  height: 46px;
+  position: relative;
+  z-index: 9;
+  background: #417c61;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 4px;
+  margin: 0 5px 0px 5px;
+}
+
+.megamenu_container:hover {
+  cursor: pointer;
+}
+
+.megamenu_container a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+.megamenu_container a:focus {
+  outline: none;
+}
+
+/* 2. Mega Menu Button */
+.megamenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: inherit;
+  margin-top: 2px;
+  width: 220px;
+}
+
+.megamenu .top_level {
+  display: inline;
+  border: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.span.glyphicon.glyphicon-menu-hamburger {
+  font-size: 14px;
+  padding: 14px 6px 14px 12px;
+}
+
+.megamenu .top_level > span {
+  font-size: 13px;
+  line-height: 12px;
+  text-transform: uppercase;
+  outline: 0;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 14px 6px 20px 0;
+}
+
+        /*  _______________________________________
+
+    02 DROP DOWNS
+    _______________________________________  */
+/* 1. Drop Downs Default Behavior */
+.megamenu .megamenu_main,
+.megamenu .megamenu_main ul {
+  position: absolute;
+  top: -9999em;
+  /* Used to avoid scrollbars */
+  left: -9999em;
+  width: 180px;
+  margin: 0 0 0px -1px;
+  padding: 0;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  border: solid 1px #dddddd;
+  border-top: solid 1px #ffffff;
+  background: #417c61;
+  opacity: 0;
+  padding-bottom: 10px;
+}
+
+.megamenu .megamenu_main li .megamenu_2col {
+  width: 400px;
+}
+
+.megamenu .megamenu_main li .megamenu_3col {
+  width: 600px;
+}
+
+.megamenu > li:hover .megamenu_main {
+  top: 44px;
+  left: 0px;
+  opacity: 1;
+  line-height: 12px;
+  width: 231px;
+  padding-bottom: 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.megamenu > li:hover .megamenu_main > a {
+  color: #ffffff;
+}
+
+.megamenu .megamenu_main li:hover > ul {
+  top: -1px;
+  left: 100%;
+  opacity: 1;
+  background: #ffffff;
+  border: 1px solid #417c61;
+  height: 514px;
+  border-radius: 0 4px 4px 0;
+  width: 220px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px 5px 5px 0;
+  width: 729px;
+}
+
+.megamenu .megamenu_main li:hover > .left_dropdown {
+  left: -100%;
+}
+
+.megamenu > li .main_opened {
+  top: 42px;
+  left: 0;
+  opacity: 1;
+}
+
+/* 2. Fade Transition */
+.megamenu_fade .megamenu_main,
+.megamenu_fade .megamenu_main ul {
+  -webkit-transition: opacity 0.4s 0.2s;
+  -moz-transition: opacity 0.4s 0.2s;
+  -o-transition: opacity 0.4s 0.2s;
+  -ms-transition: opacity 0.4s 0.2s;
+  transition: opacity 0.4s 0.2s;
+}
+
+/* 3. Slide Transition */
+.megamenu_slide .megamenu_main {
+  top: 30px;
+  -webkit-transition: top 0.3s 0.2s, opacity 0 0.2s;
+  -moz-transition: top 0.3s 0.2s, opacity 0 0.2s;
+  -o-transition: top 0.3s 0.2s, opacity 0 0.2s;
+  -ms-transition: top 0.3s 0.2s, opacity 0 0.2s;
+  transition: top 0.3s 0.2s, opacity 0 0.2s;
+}
+
+.megamenu_slide .megamenu_main ul {
+  left: 80%;
+  -webkit-transition: left 0.2s 0.2s, opacity 0 0.2s;
+  -moz-transition: left 0.2s 0.2s, opacity 0 0.2s;
+  -o-transition: left 0.2s 0.2s, opacity 0 0.2s;
+  -ms-transition: left 0.2s 0.2s, opacity 0 0.2s;
+  transition: left 0.2s 0.2s, opacity 0 0.2s;
+}
+
+.megamenu_slide .megamenu_main li > .left_dropdown {
+  left: -80%;
+}
+
+/* 4. Toggle Transition */
+.megamenu_toggle .megamenu_main {
+  top: 30px;
+  -webkit-transition: opacity 0.4s 0.2s, top 0.3s 0.2s;
+  -moz-transition: opacity 0.4s 0.2s, top 0.3s 0.2s;
+  -o-transition: opacity 0.4s 0.2s, top 0.3s 0.2s;
+  -ms-transition: opacity 0.4s 0.2s, top 0.3s 0.2s;
+  transition: opacity 0.4s 0.2s, top 0.3s 0.2s;
+}
+
+.megamenu_toggle .megamenu_main ul {
+  left: 90%;
+  -webkit-transition: opacity 0.4s 0.2s, left 0.2s 0.2s;
+  -moz-transition: opacity 0.4s 0.2s, left 0.2s 0.2s;
+  -o-transition: opacity 0.4s 0.2s, left 0.2s 0.2s;
+  -ms-transition: opacity 0.4s 0.2s, left 0.2s 0.2s;
+  transition: opacity 0.4s 0.2s, left 0.2s 0.2s;
+}
+
+.megamenu_toggle .megamenu_main li > .left_dropdown {
+  left: -90%;
+}
+
+        /*  _______________________________________
+
+    03 DROP DOWN ELEMENTS
+    _______________________________________  */
+/* 1. Arrows */
+.megamenu .megamenu_main li.dropdown_arrow > a::after {
+  display: block;
+  position: relative;
+  color: rgba(145, 197, 173, 0.56);
+  z-index: 4000;
+  top: -11px;
+  text-align: right;
+  content: ">";
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 0px;
+  right: 2px;
+  transition: color .8s;
+}
+
+.megamenu .dropdown_arrow:hover {
+  color: #ffffff;
+  transition: color .2s;
+}
+
+/* 2. List Elements */
+.megamenu > li ul {
+  list-style: none;
+  padding: 0 0 0 18px;
+  margin: 0 0 18px 0;
+}
+
+.megamenu > li.top_level ul li {
+  position: static;
+  padding: 3px 12px 3px 12px;
+  transition: background-color 0.3s;
+  margin: 0;
+  display: block;
+  height: 27px;
+  border-bottom: 1px solid rgba(145, 197, 173, 0.11);
+}
+.megamenu > li.top_level ul li h3 {
+  color: #231F20;
+}
+.megamenu > li.top_level ul li a {
+  color: #ffffff;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 14px;
+  vertical-align: middle;
+  display: inline;
+  margin: 0;
+  padding-left: 20px;
+  line-height: 20px;
+}
+.megamenu > li.top_level ul li:hover {
+  background-color: #91c5ad;
+}
+.megamenu > li.top_level ul li ul li {
+  padding: 4px 10px 4px 10px;
+  width: 170px;
+  width: 213px;
+  flex: 0 1 auto;
+  margin: 0px 0px 0px 8px;
+  height: auto;
+  border-bottom: 1px solid #d4e8df;
+}
+.megamenu > li.top_level ul li ul li:hover {
+  background-color: #91c5ad;
+  color: #ffffff;
+}
+.megamenu > li.top_level ul li ul li.second_level {
+  border-bottom: none;
+  padding-left: 0;
+}
+.megamenu > li.top_level ul li ul li.second_level:not(:first-of-type) {
+  margin-top: 10px;
+}
+.megamenu > li.top_level ul li ul li:last-of-type {
+  border-bottom: none;
+}
+.megamenu > li.top_level ul li ul li.second_level:hover {
+  background-color: white;
+  color: #ffffff;
+}
+.megamenu > li.top_level ul li ul li a {
+  color: #231F20;
+  line-height: 13px;
+  padding: 0px;
+}
+.megamenu > li.top_level ul li ul li h3 {
+  padding: 0;
+  margin: 0;
+  transition: background .8s;
+  font-size: 14px;
+}
+.megamenu > li.top_level ul li ul li h3 li > a {
+  color: #417c61;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 15px;
+  vertical-align: middle;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ul.multi_column.col-xs-4 {
+  width: 260px;
+  line-height: 14px;
+  padding-top: 6px;
+}
+ul.multi_column.col-xs-4 li {
+  height: 24px;
+}
+
+.second_level:hover {
+  background-color: #ffffff;
+}
+
+ul.megamenu_main li.title.dropdown_arrow ul li::first-of-type {
+  padding: 20px 12px 0px 12px;
+}
+
+.megamenu > li ul .relative_dropdown {
+  position: relative;
+}
+
+/* 3. Typography */
+.megamenu p {
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.megamenu h3 {
+  font-size: 13px;
+  padding: 0;
+  margin: 12px 12px 2px 12px;
+  color: #417c61;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-bottom: 1px solid #417c61;
+  width: 100%;
+}
+
+.megamenu .new {
+  font-size: xx-small;
+  vertical-align: text-top;
+  color: #e10000;
+}
+
+.megamenu .small {
+  font-size: 11px;
+  color: #888888;
+  display: block;
+  padding: 0;
+  margin-top: 4px;
+}
+
+.multi-column {
+  width: 450px;
+}
+
+.cs-multi-col-1,
+.cs-multi-col-2 {
+  max-height: 457px;
+  width: 50%;
+}
+
+/* Megamenu styles  */
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide img:focus, .slick-slide img:active {
+  outline: #417c61;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("/../../../slick-1.5.9/slick/ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("/../../../slick-1.5.9/slick/fonts/slick.eot");
+  src: url("/../../../slick-1.5.9/slick/fonts/slick.eot?#iefix") format("embedded-opentype"), url("/../../../slick-1.5.9/slick/fonts/slick.woff") format("woff"), url("/../../../slick-1.5.9/slick/fonts/slick.ttf") format("truetype"), url("/../../../slick-1.5.9/slick/fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 24px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px\9;
+  /*lte IE 8*/
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 19px;
+  border: 1px solid #A7A9AC;
+  padding: 4px;
+}
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  opacity: 0.4;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.4;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 14px;
+  line-height: 5px;
+  color: #A7A9AC;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 1px;
+}
+
+.slick-prev {
+  left: -10px;
+}
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: 0px;
+}
+.slick-prev:before {
+  content: "<";
+}
+[dir="rtl"] .slick-prev:before {
+  content: ">";
+}
+
+.slick-next {
+  right: -10px;
+}
+[dir="rtl"] .slick-next {
+  left: 0px;
+  right: auto;
+}
+.slick-next:before {
+  content: ">";
+}
+[dir="rtl"] .slick-next:before {
+  content: "<";
+}
+
+.slick-slider {
+  margin-bottom: 0px;
+}
+
+/*   --------------     OMT Table Revision 2-12-16  --------------    */
+/* structure of the table works like this:
+cs-pp-rightWorkArea
+
+            *******OMT STARTS HERE  {THIS IS WHAT IS IN THIS SCSS FILE}
+    cs-green-OMT-box
+        cs-pp-omt
+            more-info-td2 - old qbt review box
+                productinfo qbtReviewBoxT005b
+            Table (empty)
+            Table (empty)
+        qbtProductFormT005b
+            col-sm-12
+                h2  - TITLE
+            Form name"mainform"  - applies discount - lots of hidden inputs
+
+
+                script that injects the OMT Magic Menu (backend call to server - php file)
+                {Injected code below:}
+                #tabs_1  (for the first set of tabs - old page had tabs later in the page as well)
+                    ul#qbtMenuTabsT005b - this is the entire set of tabs across the OMT to material types
+                        li#tabs1first.over
+                            span#tab1li1
+                        li
+                            span#tab1li2
+                        li
+                            span#tab1li3
+                        li
+                            span#tab1li4    {etc....}
+                    div#tabs1content
+                        #tab1s1   {display Block}
+                        table.orderopt  {row including the material and the price}
+                            td.orderopt-td1    {first column, the radio button}
+                            td.orderopt-td2     {second column, the material}
+                            td.orderopt-td3    {third column, the price}
+                        #tab1s2   {display: none}  {see above for the rows, they are the same, except hidden until the corresponding tab is clicked on}
+                        #tab1s3   {display: none}
+                        #tab1s4   {display: none}      {etc...} 
+
+                *****end of the OMT styles - the next sections, handling pricing, add to cart, most popular options, are all in the productPage.scss
+
+/* -----------  OMT styles    --------   */
+.orderopt.now-selected {
+  background-color: #d4e8df;
+}
+.orderopt.now-selected .orderopt-td2,
+.orderopt.now-selected .orderopt-td3 {
+  font-weight: bold;
+}
+
+#qbtProductFormT005b {
+  background-color: #ebf5f0;
+  padding: 0px 0 0 0;
+  border-radius: 3px;
+  border: 1px solid #417c61;
+  float: left;
+}
+#qbtProductFormT005b form {
+  padding-top: 10px;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.cs-pp-omt {
+  position: relative;
+}
+.cs-pp-omt input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+.cs-pp-omt .line-header h2 {
+  background: #ebf5f0;
+}
+.cs-pp-omt .line-header h2:before {
+  font-family: "FontAwesome";
+  font-size: 32px;
+  color: #F5952E;
+  content: "\f061";
+  padding-right: 10px;
+  padding-left: 14px;
+  position: relative;
+  top: 4px;
+}
+.cs-pp-omt #tabs_1 {
+  width: 100%;
+  padding: 0 20px;
+}
+.cs-pp-omt #tabs_1 ul {
+  width: 100%;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  background-color: #ebf5f0 !important;
+  list-style: none;
+  transition: background .8s;
+}
+.cs-pp-omt #tabs_1 ul li:hover span {
+  background: transparent;
+  color: #ffffff;
+}
+.cs-pp-omt #tabs_1 ul li:hover {
+  background-color: #447860;
+  transition: background .25s;
+}
+.cs-pp-omt li:hover {
+  background-color: #3b6753;
+  transition: background .25s;
+}
+
+div#tabs_1 ul,
+div#tabs ul {
+  height: 24px;
+}
+
+div#tabs_1 ul li {
+  padding: 3px 10px 5px 10px;
+  border-radius: 3px 3px 0px 0px;
+  margin-right: 5px;
+  background: #91c5ad;
+  color: #417c61;
+  float: left;
+  height: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+div#tabs_1 ul li.over {
+  background: #57987a;
+  color: #fff;
+  float: left;
+  list-style: none;
+  cursor: pointer;
+}
+div#tabs_1 ul li.over span {
+  background-position: 100% -33px;
+  color: #ffffff;
+  background-color: #57987a;
+  font-weight: bold;
+}
+div#tabs_1 ul li span {
+  color: #1e392d;
+}
+
+div#tabs1content,
+div#tabscontent {
+  border: 1px solid #57987a;
+  border-radius: 0px 3px 3px 3px;
+  margin-top: 0px;
+}
+
+#tabs1content {
+  padding: 1.5em .8em .8em .8em;
+  position: relative;
+  top: -0.2em !important;
+  background-color: #fff !important;
+}
+
+/* ------------   OMT Radio Buttons, materials and price styles    ------   */
+.orderopt {
+  width: 438px;
+}
+
+.orderopt td {
+  padding: 0 0 3px;
+}
+
+.orderopt-td1 {
+  width: 26px;
+}
+
+.orderopt-td3 {
+  text-align: right;
+  width: 80px;
+  padding: 0 10px 3px;
+}
+
+/* Product Page - big add to cart orange button    */
+input.cs-cart-btn {
+  background: #F5952E;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: 14px;
+  padding: 11px 11px;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  white-space: normal;
+  border: 1px solid #ffffff;
+  font-family: 'Roboto', sans-serif;
+  transition: background .8s, color .8s;
+  text-transform: capitalize;
+}
+input.cs-cart-btn:hover {
+  color: #ffffff;
+  background: #06559a;
+  transition: background .25s, color .25s;
+}
+
+/* Product Page - Total line - forces the total to fill the line even when nothing is there */
+#qbtTotalPriceDiv {
+  width: 100%;
+  display: block;
+}
+
+/* Product Page - Enter Custom Text   */
+.cs-enter-text {
+  display: inline-block;
+  padding: 0 10px 0px 60px;
+  width: 100%;
+}
+.cs-enter-text span {
+  display: inline-block;
+  font-size: 35px;
+  color: #F5952E;
+  margin-left: 20px;
+  position: relative;
+  top: 4px;
+}
+.cs-enter-text input#freeoptinput {
+  margin-left: 0px;
+  width: 65%;
+  padding: 3px;
+}
+
+div#qbtProductFormT005b > h2 {
+  margin: 0px 16px 0px 16px;
+}
+
+.cs-ribbon {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0 0 0 0;
+  margin: 0px 0px 0px 0px;
+  border-top: 1px solid #dbdcde;
+  text-decoration: none;
+  height: 187px;
+  margin-bottom: 0px;
+  background: white;
+}
+.cs-ribbon h4 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 20px 0 0 0;
+  margin: 0px 8px 8px 24px;
+  color: #386b54;
+  text-decoration: none;
+  line-height: 28px;
+}
+.cs-ribbon a {
+  display: inline-block;
+}
+.cs-ribbon img {
+  max-height: 140px;
+  max-width: 145px;
+  padding: 5px 15px;
+  opacity: .7;
+  transition: opacity, .8s;
+}
+.cs-ribbon img:hover {
+  max-height: 140px;
+  max-width: 145px;
+  padding: 5px 15px;
+  opacity: 1.0;
+  transition: opacity, .2s;
+}
+.cs-ribbon .cs-ribbon-container {
+  padding: 0 45px;
+  width: 100%;
+  text-align: center;
+}
+.cs-ribbon .cs-ribbon-container:after {
+  clear: both;
+}
+.cs-ribbon .slick-prev {
+  left: 20px;
+}
+.cs-ribbon .slick-next {
+  right: 28px;
+}
+
+/* Ribbons  */
+/* ---------------- # Forms : Input form elements ---------------- */
+.cs-formField-disabled input {
+  background: #E0E0E0;
+  border-radius: 0;
+}
+
+/* input {
+    background: $disabled-bkg;
+    border-radius: 0;
+} */
+input[type=text],
+textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+
+input[type=text]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px #51cbee;
+}
+
+.form-inline .form-group {
+  width: 100%;
+}
+
+/* # Form input classes */
+.cs-marketing-square-container {
+  height: 177px;
+  background: #ffffff;
+  color: #5D5E5E;
+  padding: 10px 0;
+  border-top: 1px solid #dbdcde;
+  box-sizing: border-box;
+  display: inline-flex;
+}
+.cs-marketing-square-container a:hover {
+  text-decoration: none;
+}
+.cs-marketing-square-container h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.cs-marketing-square-container ul h4 {
+  margin-left: -15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 21px;
+  color: #5D5E5E;
+}
+.cs-marketing-square-container ul li {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #417c61;
+  font-size: 16px;
+  font-weight: 14px;
+  line-height: 24px;
+}
+.cs-marketing-square-container button.cs-btn-mktg-sq {
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  background-color: #417c61;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  white-space: inherit;
+  max-height: 80px;
+  transition: border, background-color, color .8s;
+  max-width: 180px;
+  margin: 0 auto;
+  /*  &:hover,
+  &:active {
+      background-color: #ffffff;
+      color: $green;
+      outline: none;
+      border: 1px solid $green;
+      transition: border .25s, background-color .25s, color .25s;
+  } */
+}
+.cs-marketing-square-container .cs-marketing-square-specs {
+  background: #b2d7c6;
+  margin: 0 3px 0 0;
+  padding: 15px;
+  display: flex;
+  flex-grow: 5;
+  flex-basis: 41%;
+  flex-flow: column nowrap;
+  border: 2px solid;
+  border-color: #b2d7c6;
+  transition: border .5s;
+}
+.cs-marketing-square-container .cs-marketing-square-languages {
+  background: #b2d7c6;
+  margin: 0 3px;
+  padding: 15px;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 18%;
+  flex-flow: column nowrap;
+}
+.cs-marketing-square-container .cs-marketing-square-languages h4 {
+  font-size: 16px;
+}
+.cs-marketing-square-container .cs-marketing-square-customize {
+  padding: 0;
+  border: 2px solid;
+  border-color: #b2d7c6;
+  border-right: none;
+  margin: 0 0 0 3px;
+  display: flex;
+  flex-grow: 5;
+  flex-basis: 41%;
+  flex-flow: column nowrap;
+  background-image: url("/images/yourMsg.png");
+  background-position: 100% 0;
+  background-size: 184px 154px;
+  background-repeat: no-repeat;
+  transition: border .5s;
+}
+.cs-marketing-square-container .cs-marketing-square-customize:hover {
+  border-color: #417c61;
+  transition: border-color .2s;
+}
+.cs-marketing-square-container .cs-marketing-square-customize:hover, .cs-marketing-square-container .cs-marketing-square-specs:hover {
+  border-color: #417c61;
+  transition: border-color .2s;
+}
+
+.modal {
+  z-index: 20000;
+}
+.modal .modal-header {
+  border-bottom: 1px solid #386b54;
+  margin: 15px 20px;
+  padding: 0;
+}
+.modal .modal-header button {
+  z-index: 20002;
+}
+.modal .modal-header.cs-no-header {
+  border: none;
+}
+.modal .modal-header.cs-no-header h2 {
+  display: inline;
+  display: none;
+}
+.modal .modal-header.cs-no-header + img.img-responsive {
+  z-index: 20003;
+  display: inline-block;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+  margin-top: -54px;
+}
+.modal .modal-dialog {
+  padding: 15px 5px 30px 5px;
+}
+.modal .modal-footer {
+  border-top: 1px solid #386b54;
+  margin: 0 20px;
+}
+.modal h2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 0;
+  color: #386b54;
+  text-decoration: none;
+  line-height: 28px;
+  padding-bottom: 5px;
+}
+
+button.close span {
+  z-index: 20008;
+  border: 2px solid black;
+  border-radius: 14px;
+  width: 26px;
+  height: 26px;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  background: black;
+  color: white;
+  vertical-align: text-top;
+  -webkit-box-shadow: 0px 0px 1px 1px #a7a9ac;
+  -moz-box-shadow: 0px 0px 1px 1px #a7a9ac;
+  box-shadow: 0px 0px 1px 1px #a7a9ac;
+}
+
+.cs-big-footer {
+  background: white;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+.cs-big-footer img {
+  opacity: .7;
+  transition: opacity, .8s;
+}
+.cs-big-footer img:hover {
+  opacity: 1.0;
+  transition: opacity, .2s;
+}
+.cs-big-footer .cs-link-strip-upper {
+  border-top: 3px solid #cae0c9;
+}
+.cs-big-footer .cs-link-strip-upper ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px 38px;
+}
+.cs-big-footer .cs-link-list {
+  border-top: 3px solid #cae0c9;
+  margin: 0;
+  padding: 15px;
+}
+.cs-big-footer .cs-link-list h4 {
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #06559a;
+  font-weight: bold;
+}
+.cs-big-footer .cs-link-list a {
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 14px;
+  line-height: 12px;
+  color: #231F20;
+  display: block;
+}
+.cs-big-footer .cs-link-list a:hover {
+  color: #F5952E;
+  text-decoration: none;
+}
+.cs-big-footer .cs-link-list .col-sm-4 {
+  border-right: 1px solid #A7A9AC;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+.cs-big-footer .cs-link-list .col-sm-4.cs-footer-sc-med {
+  border-right: none;
+}
+.cs-big-footer .cs-link-list .cs-footer-sc-med a {
+  display: inline-block;
+}
+.cs-big-footer .cs-link-strip-lower {
+  border-top: 2px solid #417c61;
+  padding: 8px 8px 0 8px;
+}
+.cs-big-footer .cs-link-strip-lower li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px 10px;
+}
+.cs-big-footer .cs-link-strip-lower li span {
+  height: 20px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 7px;
+  padding: 0;
+}
+.cs-big-footer .cs-link-strip-lower li span:first-of-type {
+  padding-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #06559a;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.cs-big-footer .cs-link-strip-lower li spanspan:nth-of-type(2) {
+  font-size: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cs-copyright {
+  border-top: 2px solid #417c61;
+  background: #ffffff;
+  text-align: center;
+  padding: 15px;
+  line-height: 2px;
+}
+.cs-copyright p {
+  font-size: 9px;
+}
+.cs-copyright p span {
+  padding: 0 2px;
+}
+.cs-copyright p a {
+  text-decoration: underline;
+  color: #231F20;
+  font-size: 9px;
+}
+.cs-copyright p a:hover {
+  color: #06559a;
+}
+
+.cs-shortTruncated {
+  height: 50px;
+  overflow: hidden;
+}
+
+/* # All partials */
+body {
+  background-color: #718fb3;
+}
+
+.col-sm-10 {
+  width: 80%;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.cs-csg3-options .col-sm-2 {
+  width: 20%;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+h1 {
+  word-break: break-word;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px 8px 4px 8px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 0;
+  margin: 0px 8px 8px 8px;
+  color: #417c61;
+  border-bottom: 1px solid #417c61;
+}
+
+/* StreetSign Generator overrides  */
+.cs-csg3-leftWorkArea {
+  width: 35%;
+  display: inline-block;
+  float: left;
+  position: relative;
+  padding-left: 1%;
+  padding-right: 4%;
+}
+
+p.ie-dimmed {
+  color: #6d6e71;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  padding-left: 8px;
+}
+
+.cs-csg3-leftWorkArea .btn-group, .cs-csg3-leftWorkArea label, .cs-csg3-leftWorkArea .cs-formField-disabled {
+  padding: 0 20px 0 4px;
+}
+
+.cs-csg3-rightWorkText {
+  width: 56%;
+  display: inline-block;
+  float: left;
+  position: relative;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.cs-csg3-sizeIndicator h3,
+.cs-csg3-sizeIndicator span {
+  font-size: 15px;
+  text-align: right;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #417c61;
+}
+
+.cs-csg-textEditArea h2 {
+  padding-top: 20px;
+}
+
+/*  Button stuff copied from index.css 2-4-16, some width percentage changes etc for ie */
+.cs-main .btn-group {
+  display: block;
+  width: 100%;
+  border: #A7A9AC;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.cs-main .btn-group button {
+  color: #A7A9AC;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  height: 38px;
+  font-size: 17px;
+  background: #E6E7E8;
+  padding: 4px;
+  margin: 0;
+  border-style: solid;
+  border-width: 1 px;
+  border-color: #E6E7E8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.cs-main .btn-group button.bu-selected {
+  color: #231F20;
+  background: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  height: 38px;
+  font-size: 17px;
+  border: 2px solid #F5952E;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.cs-main .btn-group button:hover {
+  background-color: whitesmoke;
+}
+
+.cs-main .btn-group label {
+  color: #A7A9AC;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.cs-main .btn-group button {
+  border: 1px solid #BCBEC0;
+}
+
+.cs-main .btn-group .cs-btn-color-blue {
+  background: #00529B;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.cs-main .btn-group .cs-btn-color-blue:hover {
+  background-color: #004787;
+}
+
+.cs-main .btn-group .cs-btn-color-blue.bu-selected {
+  background: #00529B;
+  color: #ffffff;
+}
+
+.cs-main .btn-group .cs-btn-color-white {
+  background: #ffffff;
+  color: #231F20;
+  border-radius: 4px;
+}
+
+.cs-main .btn-group .cs-btn-color-white:hover {
+  background-color: whitesmoke;
+}
+
+.cs-main .btn-group .cs-btn-color-white.bu-selected {
+  background: #ffffff;
+  color: #231F20;
+}
+
+.cs-main .btn-group .cs-btn-color-green {
+  background: #00824C;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.cs-main .btn-group .cs-btn-color-green:hover {
+  background-color: #006e40;
+}
+
+.cs-main .btn-group .cs-btn-color-green.bu-selected {
+  background: #00824C;
+  color: #ffffff;
+}
+
+.cs-main .btn-group .cs-btn-color-brown {
+  background: #6D3A1C;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.cs-main .btn-group .cs-btn-color-brown:hover {
+  background-color: #5d3118;
+}
+
+.cs-main .btn-group .cs-btn-color-brown.bu-selected {
+  background: #6D3A1C;
+  color: #ffffff;
+}
+
+.cs-main .cs-btn-two-Bu {
+  padding-top: 0px;
+}
+
+.cs-main .cs-btn-two-Bu button {
+  width: 49%;
+}
+
+.cs-main .cs-btn-three-Bu {
+  padding-top: 0px;
+}
+
+.cs-main .cs-btn-three-Bu button {
+  width: 32%;
+}
+
+.cs-main .cs-btn-four-Bu {
+  padding-top: 0px;
+}
+
+.cs-main .cs-btn-four-Bu button {
+  width: 24%;
+}
+
+.cs-main .cs-btn-borders {
+  border: 2px solid #ffffff;
+}
+
+.cs-main .cs-formField-disabled input {
+  background: #E0E0E0;
+}
+
+.cs-main .cs-btn-dimmed {
+  display: block;
+  border: #E6E7E8;
+  border-radius: 4px;
+  text-align: right;
+  float: right;
+}
+
+.cs-main .cs-btn-dimmed button {
+  color: #A7A9AC;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  height: 38px;
+  font-size: 17px;
+  background: #E6E7E8;
+  padding: 4px;
+  margin: 0;
+  border-style: solid;
+  border-width: 1 px;
+  border-color: #E6E7E8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+}
+
+.cs-main .cs-btn-dimmed button.bu-selected {
+  color: #231F20;
+  background: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  height: 38px;
+  font-size: 17px;
+  border: 2px solid #F5952E;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.cs-main .cs-btn-dimmed button.cs-btn-smaller-text {
+  font-size: 13px !important;
+  line-height: 13px;
+}
+
+.cs-btn-smaller-text {
+  font-size: 13px !important;
+  line-height: 13px;
+  vertical-align: top;
+}
+
+.cs-main .cs-btn-dimmed button:hover {
+  background-color: whitesmoke;
+}
+
+.cs-main .cs-btn-dimmed label {
+  color: #A7A9AC;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+
+.cs-main .cs-btn-dimmed button {
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.cs-main .cs-csg3-form-inline label {
+  color: #A7A9AC;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+
+.cs-csg3-form-inline, .cs-csg3-form-inline .form-group {
+  display: inline-block;
+  padding-left: 4px;
+  padding-right: 8px;
+  padding-top: 12px;
+}
+
+.cs-csg-textEditArea .cs-csg3-form-inline {
+  display: inline;
+}
+
+/* using bootstrap class names without actual bootstrap, for old IE  */
+/*  Overrides for bootstrap due to conflict  */
+body {
+  background-color: #718fb3;
+}
+
+.btn-group > .btn:last-child:not(:first-child) {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* @gridColumnWidth = 67px;
+ @gridGutterWidth = 16px;  */
+/* # Street Sign CSG Styles eventually incorporate this into the bootstrap custom scss*/

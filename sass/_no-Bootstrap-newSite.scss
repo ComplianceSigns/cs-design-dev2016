@@ -1,0 +1,6 @@
+/* # controls import order, all the Newsite stuff EXCEPT no bootstrap, for ie8 and older */		
+
+@import "partials/base";							/* # All partials */
+				
+@import "non-bootstrap-class-overrides";			/* using bootstrap class names without actual bootstrap, for old IE  */
+@import "bootstrapOverrides";						/* # Street Sign CSG Styles eventually incorporate this into the bootstrap custom scss*/
